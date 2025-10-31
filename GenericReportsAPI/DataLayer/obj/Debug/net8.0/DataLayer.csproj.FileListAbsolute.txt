@@ -1,0 +1,17 @@
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\bin\Debug\net8.0\DataLayer.deps.json
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\bin\Debug\net8.0\DataLayer.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\bin\Debug\net8.0\DataLayer.pdb
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\bin\Debug\net8.0\BusinessLogic.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\bin\Debug\net8.0\DataObjects.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\bin\Debug\net8.0\BusinessLogic.pdb
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\bin\Debug\net8.0\DataObjects.pdb
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.csproj.AssemblyReference.cache
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfoInputs.cache
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfo.cs
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.csproj.Up2Date
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\refint\DataLayer.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.pdb
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\ref\DataLayer.dll
