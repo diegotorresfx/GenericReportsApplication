@@ -1,0 +1,82 @@
+CREATE TABLE SPECTATOR.RG_ReportDefinitions (
+    Id               INT IDENTITY(1,1) PRIMARY KEY,
+    Name             NVARCHAR(200)  NOT NULL,
+    ConnectionString NVARCHAR(1024) NOT NULL,        -- cadena a usar por el motor de reportes
+    StoredProcedure  NVARCHAR(256)  NOT NULL,
+    Enabled          BIT            NOT NULL CONSTRAINT DF_ReportDefinitions_Enabled DEFAULT(1),
+    CreatedAtUtc     DATETIME2(3)   NOT NULL CONSTRAINT DF_ReportDefinitions_CreatedAtUtc DEFAULT(SYSUTCDATETIME()),
+    UpdatedAtUtc     DATETIME2(3)   NULL
+);
+GO
+
+-- LISTAR TODOS
+CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportDefinitions_GetAll
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT Id, Name, ConnectionString, StoredProcedure, Enabled, CreatedAtUtc, UpdatedAtUtc
+    FROM SPECTATOR.RG_ReportDefinitions
+    ORDER BY Id DESC;
+END
+GO
+
+-- OBTENER POR ID
+CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportDefinitions_GetById
+    @Id INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT Id, Name, ConnectionString, StoredProcedure, Enabled, CreatedAtUtc, UpdatedAtUtc
+    FROM SPECTATOR.RG_ReportDefinitions
+    WHERE Id = @Id;
+END
+GO
+
+-- INSERTAR (devuelve nuevo Id)
+CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportDefinitions_Insert
+    @Name NVARCHAR(200),
+    @ConnectionString NVARCHAR(1024),
+    @StoredProcedure NVARCHAR(256),
+    @Enabled BIT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    INSERT INTO SPECTATOR.RG_ReportDefinitions (Name, ConnectionString, StoredProcedure, Enabled)
+    VALUES (@Name, @ConnectionString, @StoredProcedure, @Enabled);
+
+    SELECT CAST(SCOPE_IDENTITY() AS INT) AS Id;
+END
+GO
+
+-- ACTUALIZAR
+CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportDefinitions_Update
+    @Id INT,
+    @Name NVARCHAR(200),
+    @ConnectionString NVARCHAR(1024),
+    @StoredProcedure NVARCHAR(256),
+    @Enabled BIT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    UPDATE SPECTATOR.RG_ReportDefinitions
+    SET Name = @Name,
+        ConnectionString = @ConnectionString,
+        StoredProcedure = @StoredProcedure,
+        Enabled = @Enabled,
+        UpdatedAtUtc = SYSUTCDATETIME()
+    WHERE Id = @Id;
+
+    SELECT @@ROWCOUNT AS Affected;
+END
+GO
+
+-- ELIMINAR
+CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportDefinitions_Delete
+    @Id INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    DELETE FROM SPECTATOR.RG_ReportDefinitions WHERE Id = @Id;
+    SELECT @@ROWCOUNT AS Affected;
+END
+GO
