@@ -4,10 +4,10 @@ namespace BusinessLogic
 {
     public interface IReportsRepository
     {
-        Task<IEnumerable<ReportDefinition>> GetAllAsync();
-        Task<ReportDefinition?> GetByIdAsync(int id);
-        Task<int> CreateAsync(ReportDefinition report);
-        Task<bool> UpdateAsync(ReportDefinition report);
-        Task<bool> DeleteAsync(int id);
+        List<ReportDefinition> GetAllAsync();
+        ReportDefinition GetByIdAsync(int id);
+        int CreateAsync(ReportDefinition report);
+        bool UpdateAsync(ReportDefinition report);
+        bool DeleteAsync(int id);
     }
 }

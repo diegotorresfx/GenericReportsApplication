@@ -5,7 +5,7 @@ using DataObjects;
 
 namespace GenericReportsAPI.Controllers
 {
-    [Authorize]
+     
     [ApiController]
     [Route("api/[controller]")]
     public sealed class ReportsController : ControllerBase
@@ -20,14 +20,14 @@ namespace GenericReportsAPI.Controllers
         [HttpGet(Name = "GetAllReports")]
         public async Task<ActionResult<IEnumerable<ReportDefinition>>> GetAllReports()
         {
-            var reports = await _repo.GetAllAsync();
+            var reports = _repo.GetAllAsync();
             return Ok(reports);
         }
 
         [HttpGet("{id:int}", Name = "GetReportById")]
         public async Task<ActionResult<ReportDefinition>> GetReportById(int id)
         {
-            var report = await _repo.GetByIdAsync(id);
+            var report = _repo.GetByIdAsync(id);
             if (report == null)
                 return NotFound($"No se encontró el reporte con Id {id}.");
             return Ok(report);
@@ -39,37 +39,35 @@ namespace GenericReportsAPI.Controllers
             if (!ModelState.IsValid)
                 return ValidationProblem(ModelState);
 
-            var newId = await _repo.CreateAsync(report);
-            var created = await _repo.GetByIdAsync(newId);
+            var newId = _repo.CreateAsync(report);
+            var created = _repo.GetByIdAsync(newId);
             return CreatedAtRoute("GetReportById", new { id = newId }, created);
         }
 
         [HttpPut("{id:int}", Name = "UpdateReport")]
         public async Task<ActionResult> UpdateReport(int id, [FromBody] ReportDefinition report)
         {
-            if (id != report.Id)
-                return BadRequest("El ID del cuerpo no coincide con el de la URL.");
-
-            var exists = await _repo.GetByIdAsync(id);
+            report.Id = id;
+            var exists = _repo.GetByIdAsync(id);
             if (exists == null)
                 return NotFound($"No se encontró el reporte con Id {id}.");
 
-            var ok = await _repo.UpdateAsync(report);
+            var ok = _repo.UpdateAsync(report);
             if (!ok)
                 return StatusCode(500, "No se pudo actualizar el reporte.");
 
-            var updated = await _repo.GetByIdAsync(id);
+            var updated = _repo.GetByIdAsync(id);
             return Ok(updated);
         }
 
         [HttpDelete("{id:int}", Name = "DeleteReport")]
         public async Task<ActionResult> DeleteReport(int id)
         {
-            var exists = await _repo.GetByIdAsync(id);
+            var exists = _repo.GetByIdAsync(id);
             if (exists == null)
                 return NotFound($"No se encontró el reporte con Id {id}.");
 
-            var ok = await _repo.DeleteAsync(id);
+            var ok = _repo.DeleteAsync(id);
             if (!ok)
                 return StatusCode(500, "No se pudo eliminar el reporte.");
 

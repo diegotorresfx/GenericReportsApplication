@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\genericreportsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|solutionrelative:genericreportsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataObjects\\ExecuteReportDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataObjects\\ExecuteReportDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\genericreportsapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|solutionrelative:genericreportsapi\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B105A62-B03C-485F-866A-F154FA0B6554}|DataLayer\\DataLayer.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\datalayer\\reportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B105A62-B03C-485F-866A-F154FA0B6554}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\reportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\genericreportsapi\\controllers\\generatereportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|solutionrelative:genericreportsapi\\controllers\\generatereportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76E0746D-8C9B-49C6-AE35-473873DAD551}|BusinessLogic\\BusinessLogic.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\businesslogic\\ireportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76E0746D-8C9B-49C6-AE35-473873DAD551}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\ireportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B105A62-B03C-485F-866A-F154FA0B6554}|DataLayer\\DataLayer.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\datalayer\\reportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B105A62-B03C-485F-866A-F154FA0B6554}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\reportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\genericreportsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|solutionrelative:genericreportsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5988535-360D-44C6-9CA2-3FD5B721D950}|GenericReportsAPI\\GenericReportsAPI.csproj|d:\\spectatorproyects\\genericreports\\genericreportsapi\\genericreportsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +66,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExecuteReportDtos.cs",
+              "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataObjects\\ExecuteReportDtos.cs",
+              "RelativeDocumentMoniker": "DataObjects\\ExecuteReportDtos.cs",
+              "ToolTip": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataObjects\\ExecuteReportDtos.cs",
+              "RelativeToolTip": "DataObjects\\ExecuteReportDtos.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAQwBoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T20:23:37.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerateReportsController.cs",
+              "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\Controllers\\GenerateReportsController.cs",
+              "RelativeDocumentMoniker": "GenericReportsAPI\\Controllers\\GenerateReportsController.cs",
+              "ToolTip": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\Controllers\\GenerateReportsController.cs",
+              "RelativeToolTip": "GenericReportsAPI\\Controllers\\GenerateReportsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T18:29:12.587Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -68,23 +101,21 @@
               "RelativeDocumentMoniker": "GenericReportsAPI\\Controllers\\ReportsController.cs",
               "ToolTip": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\Controllers\\ReportsController.cs",
               "RelativeToolTip": "GenericReportsAPI\\Controllers\\ReportsController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBYAAAA0AAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:34:38.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:34:38.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ReportsRepository.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataLayer\\ReportsRepository.cs",
               "RelativeDocumentMoniker": "DataLayer\\ReportsRepository.cs",
               "ToolTip": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataLayer\\ReportsRepository.cs",
               "RelativeToolTip": "DataLayer\\ReportsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:31:16.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:31:16.426Z"
             },
             {
               "$type": "Document",
@@ -94,14 +125,25 @@
               "RelativeDocumentMoniker": "BusinessLogic\\IReportsRepository.cs",
               "ToolTip": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\BusinessLogic\\IReportsRepository.cs",
               "RelativeToolTip": "BusinessLogic\\IReportsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:29:41.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:29:41.826Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "GenericReportsAPI\\appsettings.json",
+              "ToolTip": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\appsettings.json",
+              "RelativeToolTip": "GenericReportsAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAACbAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-31T01:14:09.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ReportDefinition.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataObjects\\ReportDefinition.cs",
               "RelativeDocumentMoniker": "DataObjects\\ReportDefinition.cs",
@@ -109,12 +151,11 @@
               "RelativeToolTip": "DataObjects\\ReportDefinition.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAA1wAcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:27:39.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:27:39.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "IJwtTokenService.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\BusinessLogic\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\IJwtTokenService.cs",
@@ -122,12 +163,11 @@
               "RelativeToolTip": "BusinessLogic\\IJwtTokenService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:18:01.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:18:01.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ApiAuthOptions.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataObjects\\ApiAuthOptions.cs",
               "RelativeDocumentMoniker": "DataObjects\\ApiAuthOptions.cs",
@@ -135,12 +175,11 @@
               "RelativeToolTip": "DataObjects\\ApiAuthOptions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:17:27.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:17:27.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataLayer\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "DataLayer\\JwtTokenService.cs",
@@ -148,12 +187,11 @@
               "RelativeToolTip": "DataLayer\\JwtTokenService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:14:53.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:14:53.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ConfigValues.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataObjects\\ConfigValues.cs",
               "RelativeDocumentMoniker": "DataObjects\\ConfigValues.cs",
@@ -161,12 +199,11 @@
               "RelativeToolTip": "DataObjects\\ConfigValues.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:14:47.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:14:47.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\Program.cs",
               "RelativeDocumentMoniker": "GenericReportsAPI\\Program.cs",
@@ -174,25 +211,11 @@
               "RelativeToolTip": "GenericReportsAPI\\Program.cs",
               "ViewState": "AQIAAHIAAAAAAAAAAAAAAH8AAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:14:25.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:14:25.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "GenericReportsAPI\\appsettings.json",
-              "ToolTip": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\appsettings.json",
-              "RelativeToolTip": "GenericReportsAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-31T01:14:09.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "JwtOptions.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\DataObjects\\JwtOptions.cs",
               "RelativeDocumentMoniker": "DataObjects\\JwtOptions.cs",
@@ -200,12 +223,11 @@
               "RelativeToolTip": "DataObjects\\JwtOptions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:14:40.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:14:40.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\SpectatorProyects\\GenericReports\\GenericReportsAPI\\GenericReportsAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "GenericReportsAPI\\Controllers\\AuthController.cs",
@@ -213,8 +235,7 @@
               "RelativeToolTip": "GenericReportsAPI\\Controllers\\AuthController.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAcwCsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T01:14:17.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T01:14:17.423Z"
             }
           ]
         }

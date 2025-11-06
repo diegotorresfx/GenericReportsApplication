@@ -20,78 +20,115 @@ namespace DataLayer
                 throw new InvalidOperationException("No hay cadena de conexión válida (ProdConnection/DevConnection).");
         }
 
-        private IDbConnection CreateConnection() => new SqlConnection(_connStr);
 
-        public async Task<IEnumerable<ReportDefinition>> GetAllAsync()
+        public  List<ReportDefinition> GetAllAsync()
         {
-            const string sp = "SPECTATOR.RG_ReportDefinitions_GetAll";
-            using var cn = CreateConnection();
-            var rows = await cn.QueryAsync<ReportDefinition>(
-                sp,
-                commandType: CommandType.StoredProcedure
-            );
-            return rows;
-        }
-
-        public async Task<ReportDefinition?> GetByIdAsync(int id)
-        {
-            const string sp = "SPECTATOR.RG_ReportDefinitions_GetById";
-            using var cn = CreateConnection();
-            var item = await cn.QuerySingleOrDefaultAsync<ReportDefinition>(
-                sp,
-                new { Id = id },
-                commandType: CommandType.StoredProcedure
-            );
-            return item;
-        }
-
-        public async Task<int> CreateAsync(ReportDefinition report)
-        {
-            const string sp = "SPECTATOR.RG_ReportDefinitions_Insert";
-            using var cn = CreateConnection();
-            var newId = await cn.QuerySingleAsync<int>(
-                sp,
-                new
+            List<ReportDefinition> response = new List<ReportDefinition>();
+            try
+            {
+                using (IDbConnection db = new SqlConnection(_connStr)) 
                 {
-                    report.Name,
-                    report.ConnectionString,
-                    report.StoredProcedure,
-                    report.Enabled
-                },
-                commandType: CommandType.StoredProcedure
-            );
-            return newId;
+                    db.Open();
+                    response = db.Query<ReportDefinition>("SPECTATOR.RG_ReportDefinitions_GetAll", commandType: CommandType.StoredProcedure).ToList();
+                    db.Close();
+                }
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("Error to get all reports: " + ex.Message);
+            }
+            
+            return response;
         }
 
-        public async Task<bool> UpdateAsync(ReportDefinition report)
+        public ReportDefinition GetByIdAsync(int id)
         {
-            const string sp = "SPECTATOR.RG_ReportDefinitions_Update";
-            using var cn = CreateConnection();
-            var affected = await cn.QuerySingleAsync<int>(
-                sp,
-                new
+            ReportDefinition response = new ReportDefinition();
+            try
+            {
+                using (IDbConnection db = new SqlConnection(_connStr))
                 {
-                    report.Id,
-                    report.Name,
-                    report.ConnectionString,
-                    report.StoredProcedure,
-                    report.Enabled
-                },
-                commandType: CommandType.StoredProcedure
-            );
-            return affected > 0;
+                    db.Open();
+                    response = db.Query<ReportDefinition>("SPECTATOR.RG_ReportDefinitions_GetById", new { Id = id },  commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    db.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error to get all reports: " + ex.Message);
+            }
+
+            return response;
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public int CreateAsync(ReportDefinition report)
         {
-            const string sp = "SPECTATOR.RG_ReportDefinitions_Delete";
-            using var cn = CreateConnection();
-            var affected = await cn.QuerySingleAsync<int>(
-                sp,
-                new { Id = id },
-                commandType: CommandType.StoredProcedure
-            );
-            return affected > 0;
+            int response;
+            try
+            {
+                using (IDbConnection db = new SqlConnection(_connStr))
+                {
+                    db.Open();
+                    response = db.Query<int>("SPECTATOR.RG_ReportDefinitions_Insert", new {
+                        Name = report.Name,
+                        ConnectionString = report.ConnectionString,
+                        StoredProcedure = report.StoredProcedure,
+                        Enabled =report.Enabled
+                    }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    db.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error to get all reports: " + ex.Message);
+            }
+            return response;
+        }
+
+        public bool UpdateAsync(ReportDefinition report)
+        {
+            bool response = false;
+            try
+            {
+                using (IDbConnection db = new SqlConnection(_connStr))
+                {
+                    db.Open();
+                    response = db.Query<bool>("SPECTATOR.RG_ReportDefinitions_Update", new {
+                        Id = report.Id,
+                        Name = report.Name,
+                        ConnectionString = report.ConnectionString,
+                        StoredProcedure = report.StoredProcedure,
+                        Enabled = report.Enabled
+                    }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    db.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error to get all reports: " + ex.Message);
+            }
+
+            return response;
+        }
+
+        public bool DeleteAsync(int id)
+        {
+            bool response = false;
+            try
+            {
+                using (IDbConnection db = new SqlConnection(_connStr))
+                {
+                    db.Open();
+                    response = db.Query<bool>("SPECTATOR.RG_ReportDefinitions_Delete", new { Id = id }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    db.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error to get all reports: " + ex.Message);
+            }
+
+            return response;
         }
     }
 }

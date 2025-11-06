@@ -1,0 +1,1384 @@
+2025-11-04 08:23:04 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-04 08:23:04 [Information] Now listening on: "https://localhost:7168"
+2025-11-04 08:23:04 [Information] Now listening on: "http://localhost:5069"
+2025-11-04 08:23:04 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-04 08:23:04 [Information] Hosting environment: "Development"
+2025-11-04 08:23:04 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-04 08:23:05 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - null null
+2025-11-04 08:23:08 [Information] HTTP "GET" "/swagger" responded 301 in 36.1306 ms
+2025-11-04 08:23:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - 301 0 null 2466.4265ms
+2025-11-04 08:23:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-04 08:23:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - null null
+2025-11-04 08:23:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - null null
+2025-11-04 08:23:08 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 183.2484 ms
+2025-11-04 08:23:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - null null
+2025-11-04 08:23:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-04 08:23:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-04 08:23:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 236.2039ms
+2025-11-04 08:23:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 28.0534ms
+2025-11-04 08:23:08 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2025-11-04 08:23:08 [Information] HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 79.6321 ms
+2025-11-04 08:23:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - 200 143943 "text/css" 86.1834ms
+2025-11-04 08:23:08 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2025-11-04 08:23:08 [Information] HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 96.6069 ms
+2025-11-04 08:23:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - 200 339486 "text/javascript" 137.7672ms
+2025-11-04 08:23:08 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2025-11-04 08:23:08 [Information] HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 117.3498 ms
+2025-11-04 08:23:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - 200 1096145 "text/javascript" 153.9143ms
+2025-11-04 08:23:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 164.3733ms
+2025-11-04 08:23:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-04 08:23:09 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 148.2166 ms
+2025-11-04 08:23:09 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 168.3426ms
+2025-11-04 09:07:04 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - null null
+2025-11-04 09:07:04 [Information] CORS policy execution successful.
+2025-11-04 09:07:04 [Information] HTTP "OPTIONS" "/api/Auth/login" responded 204 in 6.3352 ms
+2025-11-04 09:07:04 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - 204 null null 13.7007ms
+2025-11-04 09:07:04 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 817
+2025-11-04 09:07:04 [Information] CORS policy execution successful.
+2025-11-04 09:07:05 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-04 09:07:05 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-04 09:07:05 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-04 09:07:05 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 97.7223ms
+2025-11-04 09:07:05 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-04 09:07:05 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 254.0518 ms
+2025-11-04 09:07:05 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 262.0166ms
+2025-11-04 10:01:47 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:01:47 [Information] CORS policy execution successful.
+2025-11-04 10:01:47 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.5259 ms
+2025-11-04 10:01:47 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 5.8372ms
+2025-11-04 10:01:47 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:01:47 [Information] CORS policy execution successful.
+2025-11-04 10:01:47 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 10:01:47 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 10:01:48 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 10:01:48 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 485.9613ms
+2025-11-04 10:01:48 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 10:01:48 [Information] HTTP "GET" "/api/Reports" responded 200 in 582.7707 ms
+2025-11-04 10:01:48 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 586.8606ms
+2025-11-04 10:14:14 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:14 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:14 [Information] CORS policy execution successful.
+2025-11-04 10:14:14 [Information] CORS policy execution successful.
+2025-11-04 10:14:14 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.9542 ms
+2025-11-04 10:14:14 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.7480 ms
+2025-11-04 10:14:14 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 8.3124ms
+2025-11-04 10:14:14 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 10.7023ms
+2025-11-04 10:14:14 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:14 [Information] CORS policy execution successful.
+2025-11-04 10:14:14 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:14 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:14:14 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:14 PM'."
+2025-11-04 10:14:14 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:14:14 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:14:14 [Information] HTTP "GET" "/api/Reports" responded 401 in 44.3977 ms
+2025-11-04 10:14:14 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 52.549ms
+2025-11-04 10:14:14 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:14 [Information] CORS policy execution successful.
+2025-11-04 10:14:14 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:14 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:14:14 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:14 PM'."
+2025-11-04 10:14:14 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:14:14 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:14:14 [Information] HTTP "GET" "/api/Reports" responded 401 in 13.7910 ms
+2025-11-04 10:14:14 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 19.5787ms
+2025-11-04 10:14:50 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:50 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:50 [Information] CORS policy execution successful.
+2025-11-04 10:14:50 [Information] CORS policy execution successful.
+2025-11-04 10:14:50 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.5875 ms
+2025-11-04 10:14:50 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.5425ms
+2025-11-04 10:14:50 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.5441 ms
+2025-11-04 10:14:50 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:50 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 18.7563ms
+2025-11-04 10:14:50 [Information] CORS policy execution successful.
+2025-11-04 10:14:50 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:50 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:14:50 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:50 PM'."
+2025-11-04 10:14:50 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:14:50 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:14:50 [Information] HTTP "GET" "/api/Reports" responded 401 in 15.8013 ms
+2025-11-04 10:14:50 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 23.3276ms
+2025-11-04 10:14:50 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:14:50 [Information] CORS policy execution successful.
+2025-11-04 10:14:50 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:50 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:14:50 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:14:50 PM'."
+2025-11-04 10:14:50 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:14:50 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:14:50 [Information] HTTP "GET" "/api/Reports" responded 401 in 120.3313 ms
+2025-11-04 10:14:50 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 125.3277ms
+2025-11-04 10:17:15 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:17:15 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:17:15 [Information] CORS policy execution successful.
+2025-11-04 10:17:15 [Information] CORS policy execution successful.
+2025-11-04 10:17:15 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.1644 ms
+2025-11-04 10:17:15 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.8937 ms
+2025-11-04 10:17:15 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 27.0344ms
+2025-11-04 10:17:15 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 62.3861ms
+2025-11-04 10:17:15 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:17:15 [Information] CORS policy execution successful.
+2025-11-04 10:17:15 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:15 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:17:15 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:15 PM'."
+2025-11-04 10:17:15 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:17:15 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:17:15 [Information] HTTP "GET" "/api/Reports" responded 401 in 11.3430 ms
+2025-11-04 10:17:15 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 20.5047ms
+2025-11-04 10:17:15 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:17:15 [Information] CORS policy execution successful.
+2025-11-04 10:17:15 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:15 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:17:15 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:15 PM'."
+2025-11-04 10:17:15 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:17:15 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:17:15 [Information] HTTP "GET" "/api/Reports" responded 401 in 13.8682 ms
+2025-11-04 10:17:15 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 19.6577ms
+2025-11-04 10:17:16 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:17:16 [Information] CORS policy execution successful.
+2025-11-04 10:17:16 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:16 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:17:16 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:16 PM'."
+2025-11-04 10:17:16 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:17:16 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:17:16 [Information] HTTP "GET" "/api/Reports" responded 401 in 113.8181 ms
+2025-11-04 10:17:16 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 215.8017ms
+2025-11-04 10:17:16 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:17:16 [Information] CORS policy execution successful.
+2025-11-04 10:17:16 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:16 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:17:16 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:17:16 PM'."
+2025-11-04 10:17:16 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:17:16 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:17:16 [Information] HTTP "GET" "/api/Reports" responded 401 in 14.8743 ms
+2025-11-04 10:17:16 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 30.4946ms
+2025-11-04 10:21:32 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:21:32 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:21:32 [Information] CORS policy execution successful.
+2025-11-04 10:21:32 [Information] CORS policy execution successful.
+2025-11-04 10:21:32 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.1891 ms
+2025-11-04 10:21:32 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.0290 ms
+2025-11-04 10:21:32 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 17.9357ms
+2025-11-04 10:21:32 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 10.529ms
+2025-11-04 10:21:32 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:21:32 [Information] CORS policy execution successful.
+2025-11-04 10:21:32 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:21:32 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:21:32 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:21:32 PM'."
+2025-11-04 10:21:32 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:21:32 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:21:32 [Information] HTTP "GET" "/api/Reports" responded 401 in 17.6459 ms
+2025-11-04 10:21:32 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 29.525ms
+2025-11-04 10:21:32 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:21:32 [Information] CORS policy execution successful.
+2025-11-04 10:21:32 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:21:32 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:21:32 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:21:32 PM'."
+2025-11-04 10:21:32 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:21:32 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:21:32 [Information] HTTP "GET" "/api/Reports" responded 401 in 13.0984 ms
+2025-11-04 10:21:32 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 17.596ms
+2025-11-04 10:22:24 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:22:24 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:22:24 [Information] CORS policy execution successful.
+2025-11-04 10:22:24 [Information] CORS policy execution successful.
+2025-11-04 10:22:24 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 8.0280 ms
+2025-11-04 10:22:24 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.6862 ms
+2025-11-04 10:22:24 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 21.4156ms
+2025-11-04 10:22:24 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:22:24 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 22.6413ms
+2025-11-04 10:22:24 [Information] CORS policy execution successful.
+2025-11-04 10:22:24 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:22:24 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:22:24 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:22:24 PM'."
+2025-11-04 10:22:24 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:22:24 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:22:24 [Information] HTTP "GET" "/api/Reports" responded 401 in 16.5823 ms
+2025-11-04 10:22:24 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 27.1838ms
+2025-11-04 10:22:24 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:22:24 [Information] CORS policy execution successful.
+2025-11-04 10:22:24 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:22:24 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:22:24 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:22:24 PM'."
+2025-11-04 10:22:24 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:22:24 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:22:24 [Information] HTTP "GET" "/api/Reports" responded 401 in 13.3477 ms
+2025-11-04 10:22:24 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 17.8993ms
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 5.6130 ms
+2025-11-04 10:23:59 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.5375 ms
+2025-11-04 10:23:59 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.9507 ms
+2025-11-04 10:23:59 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.5087 ms
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 157.8398ms
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 145.2449ms
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 63.5987ms
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 57.8284ms
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:23:59 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'."
+2025-11-04 10:23:59 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:23:59 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:23:59 [Information] HTTP "GET" "/api/Reports" responded 401 in 14.3279 ms
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 21.4944ms
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:23:59 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'."
+2025-11-04 10:23:59 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:23:59 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:23:59 [Information] HTTP "GET" "/api/Reports" responded 401 in 14.8454 ms
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 18.4738ms
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:23:59 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'."
+2025-11-04 10:23:59 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:23:59 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:23:59 [Information] HTTP "GET" "/api/Reports" responded 401 in 41.2209 ms
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 50.5744ms
+2025-11-04 10:23:59 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:23:59 [Information] CORS policy execution successful.
+2025-11-04 10:23:59 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:23:59 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:23:59 PM'."
+2025-11-04 10:23:59 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:23:59 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:23:59 [Information] HTTP "GET" "/api/Reports" responded 401 in 12.3533 ms
+2025-11-04 10:23:59 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 21.9697ms
+2025-11-04 10:27:45 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:27:45 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:27:45 [Information] CORS policy execution successful.
+2025-11-04 10:27:45 [Information] CORS policy execution successful.
+2025-11-04 10:27:45 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.0551 ms
+2025-11-04 10:27:45 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.7958 ms
+2025-11-04 10:27:45 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 11.6955ms
+2025-11-04 10:27:45 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 13.5375ms
+2025-11-04 10:27:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:27:45 [Information] CORS policy execution successful.
+2025-11-04 10:27:45 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:27:45 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:27:45 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:27:45 PM'."
+2025-11-04 10:27:45 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:27:45 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:27:45 [Information] HTTP "GET" "/api/Reports" responded 401 in 12.6737 ms
+2025-11-04 10:27:45 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 27.8629ms
+2025-11-04 10:27:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:27:45 [Information] CORS policy execution successful.
+2025-11-04 10:27:45 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:27:45 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:27:45 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:27:45 PM'."
+2025-11-04 10:27:45 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:27:45 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:27:45 [Information] HTTP "GET" "/api/Reports" responded 401 in 10.8618 ms
+2025-11-04 10:27:45 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 29.3529ms
+2025-11-04 10:36:44 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:36:44 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:36:44 [Information] CORS policy execution successful.
+2025-11-04 10:36:44 [Information] CORS policy execution successful.
+2025-11-04 10:36:44 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.0063 ms
+2025-11-04 10:36:44 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.7474 ms
+2025-11-04 10:36:44 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.7404ms
+2025-11-04 10:36:44 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.8128ms
+2025-11-04 10:36:44 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:36:44 [Information] CORS policy execution successful.
+2025-11-04 10:36:44 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:36:44 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:36:44 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:36:44 PM'."
+2025-11-04 10:36:44 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:36:44 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:36:44 [Information] HTTP "GET" "/api/Reports" responded 401 in 17.5591 ms
+2025-11-04 10:36:44 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 31.7373ms
+2025-11-04 10:36:44 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:36:44 [Information] CORS policy execution successful.
+2025-11-04 10:36:44 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:36:44 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:36:44 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:36:44 PM'."
+2025-11-04 10:36:44 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:36:44 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:36:44 [Information] HTTP "GET" "/api/Reports" responded 401 in 22.4585 ms
+2025-11-04 10:36:44 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 29.3867ms
+2025-11-04 10:40:42 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:42 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:42 [Information] CORS policy execution successful.
+2025-11-04 10:40:42 [Information] CORS policy execution successful.
+2025-11-04 10:40:42 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 5.0801 ms
+2025-11-04 10:40:42 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.7491 ms
+2025-11-04 10:40:42 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 32.696ms
+2025-11-04 10:40:42 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 30.8928ms
+2025-11-04 10:40:42 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:42 [Information] CORS policy execution successful.
+2025-11-04 10:40:42 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:42 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:40:42 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:42 PM'."
+2025-11-04 10:40:42 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:40:42 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:40:42 [Information] HTTP "GET" "/api/Reports" responded 401 in 21.1195 ms
+2025-11-04 10:40:42 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 27.9907ms
+2025-11-04 10:40:42 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:42 [Information] CORS policy execution successful.
+2025-11-04 10:40:42 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:42 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:40:42 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:42 PM'."
+2025-11-04 10:40:42 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:40:42 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:40:42 [Information] HTTP "GET" "/api/Reports" responded 401 in 11.5365 ms
+2025-11-04 10:40:42 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 17.6716ms
+2025-11-04 10:40:54 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:54 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:54 [Information] CORS policy execution successful.
+2025-11-04 10:40:54 [Information] CORS policy execution successful.
+2025-11-04 10:40:54 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.6486 ms
+2025-11-04 10:40:54 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.8568 ms
+2025-11-04 10:40:54 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 11.7549ms
+2025-11-04 10:40:54 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:54 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 16.4237ms
+2025-11-04 10:40:54 [Information] CORS policy execution successful.
+2025-11-04 10:40:54 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:54 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:40:54 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:54 PM'."
+2025-11-04 10:40:54 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:40:54 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:40:54 [Information] HTTP "GET" "/api/Reports" responded 401 in 9.7901 ms
+2025-11-04 10:40:54 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 32.0642ms
+2025-11-04 10:40:54 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:40:54 [Information] CORS policy execution successful.
+2025-11-04 10:40:54 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:54 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:40:54 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:40:54 PM'."
+2025-11-04 10:40:54 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:40:54 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:40:54 [Information] HTTP "GET" "/api/Reports" responded 401 in 16.7489 ms
+2025-11-04 10:40:54 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 21.6784ms
+2025-11-04 10:51:01 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:01 [Information] CORS policy execution successful.
+2025-11-04 10:51:01 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.4330 ms
+2025-11-04 10:51:01 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:01 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 17.2835ms
+2025-11-04 10:51:01 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:01 [Information] CORS policy execution successful.
+2025-11-04 10:51:01 [Information] CORS policy execution successful.
+2025-11-04 10:51:01 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:01 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:51:01 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.2514 ms
+2025-11-04 10:51:01 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:01 PM'."
+2025-11-04 10:51:01 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 31.8787ms
+2025-11-04 10:51:01 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:51:01 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:51:01 [Information] HTTP "GET" "/api/Reports" responded 401 in 22.2448 ms
+2025-11-04 10:51:01 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 32.5621ms
+2025-11-04 10:51:01 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:01 [Information] CORS policy execution successful.
+2025-11-04 10:51:01 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:01 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:51:01 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:01 PM'."
+2025-11-04 10:51:01 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:51:01 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:51:01 [Information] HTTP "GET" "/api/Reports" responded 401 in 13.1643 ms
+2025-11-04 10:51:01 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 17.2026ms
+2025-11-04 10:51:10 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:10 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:10 [Information] CORS policy execution successful.
+2025-11-04 10:51:10 [Information] CORS policy execution successful.
+2025-11-04 10:51:10 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 7.7725 ms
+2025-11-04 10:51:10 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 27.5634ms
+2025-11-04 10:51:10 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:11 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 90.0644 ms
+2025-11-04 10:51:11 [Information] CORS policy execution successful.
+2025-11-04 10:51:11 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 110.1394ms
+2025-11-04 10:51:11 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:11 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:51:11 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:11 PM'."
+2025-11-04 10:51:11 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:51:11 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:51:11 [Information] HTTP "GET" "/api/Reports" responded 401 in 21.6646 ms
+2025-11-04 10:51:11 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 48.2932ms
+2025-11-04 10:51:11 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:11 [Information] CORS policy execution successful.
+2025-11-04 10:51:11 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:11 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:51:11 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:11 PM'."
+2025-11-04 10:51:11 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:51:11 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:51:11 [Information] HTTP "GET" "/api/Reports" responded 401 in 14.4008 ms
+2025-11-04 10:51:11 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 18.8698ms
+2025-11-04 10:51:17 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:17 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:17 [Information] CORS policy execution successful.
+2025-11-04 10:51:17 [Information] CORS policy execution successful.
+2025-11-04 10:51:17 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 0.4751 ms
+2025-11-04 10:51:17 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 51.6242ms
+2025-11-04 10:51:17 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 41.1548 ms
+2025-11-04 10:51:17 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 56.4888ms
+2025-11-04 10:51:17 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:17 [Information] CORS policy execution successful.
+2025-11-04 10:51:17 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:17 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:51:17 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:17 PM'."
+2025-11-04 10:51:17 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:51:17 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:51:17 [Information] HTTP "GET" "/api/Reports" responded 401 in 67.0301 ms
+2025-11-04 10:51:17 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 106.7914ms
+2025-11-04 10:51:17 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:17 [Information] CORS policy execution successful.
+2025-11-04 10:51:17 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:17 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:51:17 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:17 PM'."
+2025-11-04 10:51:17 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:51:17 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:51:17 [Information] HTTP "GET" "/api/Reports" responded 401 in 13.3013 ms
+2025-11-04 10:51:17 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 25.5051ms
+2025-11-04 10:51:48 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:51:48 [Information] CORS policy execution successful.
+2025-11-04 10:51:48 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.1101 ms
+2025-11-04 10:51:48 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 9.4302ms
+2025-11-04 10:51:48 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - "application/json" 155
+2025-11-04 10:51:48 [Information] CORS policy execution successful.
+2025-11-04 10:51:48 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:48 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:51:48 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:51:48 PM'."
+2025-11-04 10:51:48 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:51:48 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:51:48 [Information] HTTP "POST" "/api/Reports" responded 401 in 15.2969 ms
+2025-11-04 10:51:48 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 25.6497ms
+2025-11-04 10:54:24 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:54:24 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:54:24 [Information] CORS policy execution successful.
+2025-11-04 10:54:24 [Information] CORS policy execution successful.
+2025-11-04 10:54:24 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.7644 ms
+2025-11-04 10:54:24 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 17.7002ms
+2025-11-04 10:54:24 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.9597 ms
+2025-11-04 10:54:24 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 19.314ms
+2025-11-04 10:54:24 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:54:24 [Information] CORS policy execution successful.
+2025-11-04 10:54:24 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:54:24 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:54:24 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:54:24 PM'."
+2025-11-04 10:54:24 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:54:24 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:54:24 [Information] HTTP "GET" "/api/Reports" responded 401 in 19.2776 ms
+2025-11-04 10:54:24 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 22.9179ms
+2025-11-04 10:54:25 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:54:25 [Information] CORS policy execution successful.
+2025-11-04 10:54:25 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:54:25 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:54:25 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:54:25 PM'."
+2025-11-04 10:54:25 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:54:25 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:54:25 [Information] HTTP "GET" "/api/Reports" responded 401 in 14.8773 ms
+2025-11-04 10:54:25 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 25.9013ms
+2025-11-04 10:55:09 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:55:09 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:55:09 [Information] CORS policy execution successful.
+2025-11-04 10:55:09 [Information] CORS policy execution successful.
+2025-11-04 10:55:09 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.8373 ms
+2025-11-04 10:55:09 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 6.6123 ms
+2025-11-04 10:55:09 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.6531ms
+2025-11-04 10:55:09 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 34.2378ms
+2025-11-04 10:55:09 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:55:09 [Information] CORS policy execution successful.
+2025-11-04 10:55:09 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:55:09 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:55:09 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:55:09 PM'."
+2025-11-04 10:55:09 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:55:09 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:55:09 [Information] HTTP "GET" "/api/Reports" responded 401 in 9.5504 ms
+2025-11-04 10:55:09 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 19.6846ms
+2025-11-04 10:55:09 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 10:55:09 [Information] CORS policy execution successful.
+2025-11-04 10:55:09 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:55:09 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 10:55:09 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 3:55:09 PM'."
+2025-11-04 10:55:09 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 10:55:09 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 10:55:09 [Information] HTTP "GET" "/api/Reports" responded 401 in 12.4936 ms
+2025-11-04 10:55:09 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 19.9379ms
+2025-11-04 11:01:46 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:01:46 [Information] CORS policy execution successful.
+2025-11-04 11:01:46 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.0098 ms
+2025-11-04 11:01:46 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 13.0392ms
+2025-11-04 11:01:46 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - "application/json" 143
+2025-11-04 11:01:46 [Information] CORS policy execution successful.
+2025-11-04 11:01:46 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:01:46 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:01:46 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:01:46 PM'."
+2025-11-04 11:01:46 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:01:46 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:01:46 [Information] HTTP "POST" "/api/Reports" responded 401 in 27.0325 ms
+2025-11-04 11:01:46 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 31.9018ms
+2025-11-04 11:08:59 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:08:59 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:08:59 [Information] CORS policy execution successful.
+2025-11-04 11:08:59 [Information] CORS policy execution successful.
+2025-11-04 11:08:59 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.0714 ms
+2025-11-04 11:08:59 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.0549 ms
+2025-11-04 11:08:59 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.2295ms
+2025-11-04 11:08:59 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:08:59 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 13.8664ms
+2025-11-04 11:08:59 [Information] CORS policy execution successful.
+2025-11-04 11:08:59 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:08:59 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:08:59 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:08:59 PM'."
+2025-11-04 11:08:59 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:08:59 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:08:59 [Information] HTTP "GET" "/api/Reports" responded 401 in 14.4283 ms
+2025-11-04 11:08:59 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 22.6967ms
+2025-11-04 11:08:59 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:08:59 [Information] CORS policy execution successful.
+2025-11-04 11:08:59 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:08:59 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:08:59 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:08:59 PM'."
+2025-11-04 11:08:59 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:08:59 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:08:59 [Information] HTTP "GET" "/api/Reports" responded 401 in 9.2072 ms
+2025-11-04 11:08:59 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 15.8459ms
+2025-11-04 11:09:33 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:33 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:33 [Information] CORS policy execution successful.
+2025-11-04 11:09:33 [Information] CORS policy execution successful.
+2025-11-04 11:09:33 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.7092 ms
+2025-11-04 11:09:33 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.8918 ms
+2025-11-04 11:09:33 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 11.492ms
+2025-11-04 11:09:33 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 13.7783ms
+2025-11-04 11:09:33 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:33 [Information] CORS policy execution successful.
+2025-11-04 11:09:33 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:33 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:09:33 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:33 PM'."
+2025-11-04 11:09:33 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:09:33 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:09:33 [Information] HTTP "GET" "/api/Reports" responded 401 in 15.8222 ms
+2025-11-04 11:09:33 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 45.6103ms
+2025-11-04 11:09:33 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:33 [Information] CORS policy execution successful.
+2025-11-04 11:09:33 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:33 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:09:33 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:33 PM'."
+2025-11-04 11:09:33 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:09:33 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:09:33 [Information] HTTP "GET" "/api/Reports" responded 401 in 14.3766 ms
+2025-11-04 11:09:33 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 20.1184ms
+2025-11-04 11:09:47 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:47 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:47 [Information] CORS policy execution successful.
+2025-11-04 11:09:47 [Information] CORS policy execution successful.
+2025-11-04 11:09:47 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.7855 ms
+2025-11-04 11:09:47 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.7962 ms
+2025-11-04 11:09:47 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 8.3974ms
+2025-11-04 11:09:47 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 9.9201ms
+2025-11-04 11:09:47 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:47 [Information] CORS policy execution successful.
+2025-11-04 11:09:47 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:47 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:09:47 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:47 PM'."
+2025-11-04 11:09:47 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:09:47 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:09:47 [Information] HTTP "GET" "/api/Reports" responded 401 in 8.7434 ms
+2025-11-04 11:09:47 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 22.1036ms
+2025-11-04 11:09:47 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:09:47 [Information] CORS policy execution successful.
+2025-11-04 11:09:47 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:47 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:09:47 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:09:47 PM'."
+2025-11-04 11:09:47 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:09:47 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:09:47 [Information] HTTP "GET" "/api/Reports" responded 401 in 11.7469 ms
+2025-11-04 11:09:47 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 20.0038ms
+2025-11-04 11:11:46 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 826
+2025-11-04 11:11:46 [Information] CORS policy execution failed.
+2025-11-04 11:11:46 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-04 11:11:46 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-04 11:11:46 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-04 11:11:46 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-04 11:11:46 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 4.9458ms
+2025-11-04 11:11:46 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-04 11:11:46 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 12.1103 ms
+2025-11-04 11:11:46 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 19.7386ms
+2025-11-04 11:12:08 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:08 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:08 [Information] CORS policy execution successful.
+2025-11-04 11:12:08 [Information] CORS policy execution successful.
+2025-11-04 11:12:08 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 0.9653 ms
+2025-11-04 11:12:08 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.8800 ms
+2025-11-04 11:12:08 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.3393ms
+2025-11-04 11:12:08 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 28.2309ms
+2025-11-04 11:12:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:08 [Information] CORS policy execution successful.
+2025-11-04 11:12:08 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:08 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:12:08 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:08 PM'."
+2025-11-04 11:12:08 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:12:08 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:12:08 [Information] HTTP "GET" "/api/Reports" responded 401 in 12.2043 ms
+2025-11-04 11:12:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 21.113ms
+2025-11-04 11:12:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:08 [Information] CORS policy execution successful.
+2025-11-04 11:12:08 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:08 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:12:08 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:08 PM'."
+2025-11-04 11:12:08 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:12:08 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:12:08 [Information] HTTP "GET" "/api/Reports" responded 401 in 10.3285 ms
+2025-11-04 11:12:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 17.7801ms
+2025-11-04 11:12:15 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:15 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:15 [Information] CORS policy execution successful.
+2025-11-04 11:12:15 [Information] CORS policy execution successful.
+2025-11-04 11:12:15 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.2151 ms
+2025-11-04 11:12:15 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 36.5865ms
+2025-11-04 11:12:15 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 8.0503 ms
+2025-11-04 11:12:15 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 40.7665ms
+2025-11-04 11:12:15 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:15 [Information] CORS policy execution successful.
+2025-11-04 11:12:15 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:15 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:12:15 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:15 PM'."
+2025-11-04 11:12:15 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:12:15 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:12:15 [Information] HTTP "GET" "/api/Reports" responded 401 in 71.7073 ms
+2025-11-04 11:12:15 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 79.4035ms
+2025-11-04 11:12:15 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:12:15 [Information] CORS policy execution successful.
+2025-11-04 11:12:15 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:15 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:12:15 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:12:15 PM'."
+2025-11-04 11:12:15 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:12:15 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:12:15 [Information] HTTP "GET" "/api/Reports" responded 401 in 11.9554 ms
+2025-11-04 11:12:15 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 20.4699ms
+2025-11-04 11:19:48 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:19:48 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:19:48 [Information] CORS policy execution successful.
+2025-11-04 11:19:48 [Information] CORS policy execution successful.
+2025-11-04 11:19:48 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 5.8701 ms
+2025-11-04 11:19:48 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.9729 ms
+2025-11-04 11:19:48 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 19.2279ms
+2025-11-04 11:19:48 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 20.1862ms
+2025-11-04 11:19:48 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:19:48 [Information] CORS policy execution successful.
+2025-11-04 11:19:48 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:19:48 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:19:48 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:19:48 PM'."
+2025-11-04 11:19:48 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:19:48 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:19:48 [Information] HTTP "GET" "/api/Reports" responded 401 in 124.4435 ms
+2025-11-04 11:19:48 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 132.3607ms
+2025-11-04 11:19:48 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:19:48 [Information] CORS policy execution successful.
+2025-11-04 11:19:48 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:19:48 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-04 11:19:48 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 3:07:05 PM', Current time (UTC): '11/4/2025 4:19:48 PM'."
+2025-11-04 11:19:48 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-04 11:19:48 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-04 11:19:48 [Information] HTTP "GET" "/api/Reports" responded 401 in 11.0969 ms
+2025-11-04 11:19:48 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 401 0 null 18.0098ms
+2025-11-04 11:21:58 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - null null
+2025-11-04 11:21:58 [Information] CORS policy execution successful.
+2025-11-04 11:21:58 [Information] HTTP "OPTIONS" "/api/Auth/login" responded 204 in 1.1904 ms
+2025-11-04 11:21:58 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - 204 null null 21.5409ms
+2025-11-04 11:21:58 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 817
+2025-11-04 11:21:58 [Information] CORS policy execution successful.
+2025-11-04 11:21:58 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-04 11:21:58 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-04 11:21:58 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-04 11:21:58 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 8.108ms
+2025-11-04 11:21:58 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-04 11:21:58 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 27.9343 ms
+2025-11-04 11:21:58 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 35.796ms
+2025-11-04 11:21:58 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:21:58 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:21:58 [Information] CORS policy execution successful.
+2025-11-04 11:21:58 [Information] CORS policy execution successful.
+2025-11-04 11:21:58 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.9363 ms
+2025-11-04 11:21:58 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.0862ms
+2025-11-04 11:21:58 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:21:58 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 7.7407 ms
+2025-11-04 11:21:58 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 19.9801ms
+2025-11-04 11:21:58 [Information] CORS policy execution successful.
+2025-11-04 11:21:58 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:21:58 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:22:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:22:00 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 1814.4388ms
+2025-11-04 11:22:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:22:00 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:22:00 [Information] CORS policy execution successful.
+2025-11-04 11:22:00 [Information] HTTP "GET" "/api/Reports" responded 200 in 1833.2913 ms
+2025-11-04 11:22:00 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:22:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 1850.2187ms
+2025-11-04 11:22:00 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:22:00 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:22:00 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 8.139ms
+2025-11-04 11:22:00 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:22:00 [Information] HTTP "GET" "/api/Reports" responded 200 in 26.1036 ms
+2025-11-04 11:22:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 31.8638ms
+2025-11-04 11:22:30 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:22:30 [Information] CORS policy execution successful.
+2025-11-04 11:22:30 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.3064 ms
+2025-11-04 11:22:30 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 17.7055ms
+2025-11-04 11:22:30 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - "application/json" 142
+2025-11-04 11:22:30 [Information] CORS policy execution successful.
+2025-11-04 11:22:30 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:22:30 [Information] Route matched with "{action = \"CreateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateReport(DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:22:30 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-11-04 11:22:30 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)" in 52.4429ms
+2025-11-04 11:22:30 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:22:30 [Information] HTTP "POST" "/api/Reports" responded 400 in 71.9106 ms
+2025-11-04 11:22:30 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - 400 null "application/problem+json; charset=utf-8" 77.2943ms
+2025-11-04 11:26:48 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:26:48 [Information] CORS policy execution successful.
+2025-11-04 11:26:48 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.3950 ms
+2025-11-04 11:26:48 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 10.373ms
+2025-11-04 11:26:48 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - "application/json" 142
+2025-11-04 11:26:48 [Information] CORS policy execution successful.
+2025-11-04 11:26:48 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:26:48 [Information] Route matched with "{action = \"CreateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateReport(DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:26:48 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-11-04 11:26:49 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)" in 5.1712ms
+2025-11-04 11:26:49 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:26:49 [Information] HTTP "POST" "/api/Reports" responded 400 in 15.4895 ms
+2025-11-04 11:26:49 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - 400 null "application/problem+json; charset=utf-8" 20.5269ms
+2025-11-04 11:30:42 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:30:42 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:30:42 [Information] CORS policy execution successful.
+2025-11-04 11:30:42 [Information] CORS policy execution successful.
+2025-11-04 11:30:42 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 0.9099 ms
+2025-11-04 11:30:42 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 23.6717ms
+2025-11-04 11:30:42 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:30:42 [Information] CORS policy execution successful.
+2025-11-04 11:30:42 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 27.6735 ms
+2025-11-04 11:30:42 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:30:42 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 191.3115ms
+2025-11-04 11:30:42 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:30:42 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:30:42 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 458.6098ms
+2025-11-04 11:30:42 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:30:42 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:30:42 [Information] CORS policy execution successful.
+2025-11-04 11:30:42 [Information] HTTP "GET" "/api/Reports" responded 200 in 618.6495 ms
+2025-11-04 11:30:42 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:30:42 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 632.0127ms
+2025-11-04 11:30:42 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:30:42 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:30:42 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 15.5497ms
+2025-11-04 11:30:42 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:30:42 [Information] HTTP "GET" "/api/Reports" responded 200 in 31.5278 ms
+2025-11-04 11:30:42 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 36.7636ms
+2025-11-04 11:31:14 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:31:14 [Information] CORS policy execution successful.
+2025-11-04 11:31:14 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.3461 ms
+2025-11-04 11:31:14 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 12.6059ms
+2025-11-04 11:31:14 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - "application/json" 99
+2025-11-04 11:31:14 [Information] CORS policy execution successful.
+2025-11-04 11:31:14 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:31:14 [Information] Route matched with "{action = \"CreateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateReport(DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:31:14 [Information] Executing "CreatedAtRouteResult", writing value of type '"DataObjects.ReportDefinition"'.
+2025-11-04 11:31:14 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)" in 173.2797ms
+2025-11-04 11:31:14 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:31:14 [Information] HTTP "POST" "/api/Reports" responded 201 in 180.6867 ms
+2025-11-04 11:31:14 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - 201 null "application/json; charset=utf-8" 187.8875ms
+2025-11-04 11:31:14 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:31:14 [Information] CORS policy execution successful.
+2025-11-04 11:31:14 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:31:14 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:31:14 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:31:14 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 12.5368ms
+2025-11-04 11:31:14 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:31:14 [Information] HTTP "GET" "/api/Reports" responded 200 in 30.3905 ms
+2025-11-04 11:31:14 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 34.5856ms
+2025-11-04 11:33:44 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:33:44 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:33:44 [Information] CORS policy execution successful.
+2025-11-04 11:33:44 [Information] CORS policy execution successful.
+2025-11-04 11:33:44 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.4210 ms
+2025-11-04 11:33:44 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.8840 ms
+2025-11-04 11:33:44 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 14.8615ms
+2025-11-04 11:33:44 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 17.8471ms
+2025-11-04 11:33:44 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:33:44 [Information] CORS policy execution successful.
+2025-11-04 11:33:44 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:33:44 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:33:44 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:33:44 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 39.542ms
+2025-11-04 11:33:44 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:33:44 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:33:44 [Information] CORS policy execution successful.
+2025-11-04 11:33:44 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:33:44 [Information] HTTP "GET" "/api/Reports" responded 200 in 52.9393 ms
+2025-11-04 11:33:44 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:33:44 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 64.9015ms
+2025-11-04 11:33:44 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:33:44 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 4.749ms
+2025-11-04 11:33:44 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:33:44 [Information] HTTP "GET" "/api/Reports" responded 200 in 21.1454 ms
+2025-11-04 11:33:44 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 26.2727ms
+2025-11-04 11:35:11 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:35:11 [Information] CORS policy execution successful.
+2025-11-04 11:35:11 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 1.1342 ms
+2025-11-04 11:35:11 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 5.1817ms
+2025-11-04 11:35:11 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 100
+2025-11-04 11:35:11 [Information] CORS policy execution successful.
+2025-11-04 11:35:11 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:35:11 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:35:11 [Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2025-11-04 11:35:11 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)" in 3.4108ms
+2025-11-04 11:35:11 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:35:11 [Information] HTTP "PUT" "/api/Reports/1" responded 400 in 17.9879 ms
+2025-11-04 11:35:11 [Information] Request finished "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - 400 null "text/plain; charset=utf-8" 26.7044ms
+2025-11-04 11:35:31 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:35:31 [Information] CORS policy execution successful.
+2025-11-04 11:35:31 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 0.9599 ms
+2025-11-04 11:35:31 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 4.6601ms
+2025-11-04 11:35:31 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 100
+2025-11-04 11:35:31 [Information] CORS policy execution successful.
+2025-11-04 11:35:31 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:35:31 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:35:31 [Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2025-11-04 11:35:31 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)" in 1.9338ms
+2025-11-04 11:35:31 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:35:31 [Information] HTTP "PUT" "/api/Reports/1" responded 400 in 11.8703 ms
+2025-11-04 11:35:31 [Information] Request finished "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - 400 null "text/plain; charset=utf-8" 17.0901ms
+2025-11-04 11:35:55 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:35:55 [Information] CORS policy execution successful.
+2025-11-04 11:35:55 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 1.8987 ms
+2025-11-04 11:35:55 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 10.4381ms
+2025-11-04 11:35:55 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 100
+2025-11-04 11:35:55 [Information] CORS policy execution successful.
+2025-11-04 11:35:55 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:35:55 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:35:55 [Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2025-11-04 11:35:55 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)" in 1.595ms
+2025-11-04 11:35:55 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:35:55 [Information] HTTP "PUT" "/api/Reports/1" responded 400 in 25.1946 ms
+2025-11-04 11:35:55 [Information] Request finished "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - 400 null "text/plain; charset=utf-8" 33.7295ms
+2025-11-04 11:45:09 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:45:09 [Information] CORS policy execution successful.
+2025-11-04 11:45:09 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 5.0306 ms
+2025-11-04 11:45:09 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 12.0542ms
+2025-11-04 11:45:09 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 100
+2025-11-04 11:45:09 [Information] CORS policy execution successful.
+2025-11-04 11:45:09 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:45:09 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:51:09 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-04 11:51:09 [Information] Now listening on: "https://localhost:7168"
+2025-11-04 11:51:09 [Information] Now listening on: "http://localhost:5069"
+2025-11-04 11:51:09 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-04 11:51:09 [Information] Hosting environment: "Development"
+2025-11-04 11:51:09 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-04 11:51:10 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - null null
+2025-11-04 11:51:12 [Information] HTTP "GET" "/swagger" responded 301 in 12.2470 ms
+2025-11-04 11:51:12 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - 301 0 null 2624.118ms
+2025-11-04 11:51:12 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-04 11:51:13 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 136.1919 ms
+2025-11-04 11:51:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 147.5279ms
+2025-11-04 11:51:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - null null
+2025-11-04 11:51:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - null null
+2025-11-04 11:51:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - null null
+2025-11-04 11:51:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-04 11:51:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-04 11:51:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 27.6258ms
+2025-11-04 11:51:13 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2025-11-04 11:51:13 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2025-11-04 11:51:13 [Information] HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 50.2101 ms
+2025-11-04 11:51:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - 200 143943 "text/css" 57.0774ms
+2025-11-04 11:51:13 [Information] HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 65.2977 ms
+2025-11-04 11:51:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - 200 339486 "text/javascript" 74.8988ms
+2025-11-04 11:51:13 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2025-11-04 11:51:13 [Information] HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 77.4060 ms
+2025-11-04 11:51:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - 200 1096145 "text/javascript" 84.9507ms
+2025-11-04 11:51:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 96.0726ms
+2025-11-04 11:51:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-04 11:51:13 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 102.0511 ms
+2025-11-04 11:51:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 105.6536ms
+2025-11-04 11:51:34 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:51:34 [Information] CORS policy execution successful.
+2025-11-04 11:51:34 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 7.2447 ms
+2025-11-04 11:51:34 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 35.0474ms
+2025-11-04 11:51:34 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 100
+2025-11-04 11:51:34 [Information] CORS policy execution successful.
+2025-11-04 11:51:35 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:51:35 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 9.4137 ms
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 6.3211 ms
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.7455 ms
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.5440 ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 499 null null 18.6039ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 499 null null 19.2632ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 499 null null 19.1929ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 499 null null 19.0351ms
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 0.9271 ms
+2025-11-04 11:52:05 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 7.7119ms
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 7.5042 ms
+2025-11-04 11:52:05 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)" in 30539.3714ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 17.9588ms
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 13.1707 ms
+2025-11-04 11:52:05 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:52:05 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 6.4835 ms
+2025-11-04 11:52:05 [Error] HTTP "PUT" "/api/Reports/1" responded 500 in 30726.6461 ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 32.4705ms
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - 500 null "text/plain; charset=utf-8" 30742.9961ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 27.9752ms
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:52:05 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:52:05 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:52:05 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 19.8846ms
+2025-11-04 11:52:05 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:52:05 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:52:05 [Information] CORS policy execution successful.
+2025-11-04 11:52:05 [Information] HTTP "GET" "/api/Reports" responded 200 in 42.1579 ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 51.949ms
+2025-11-04 11:52:05 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:52:05 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:52:05 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:52:05 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 7.2684ms
+2025-11-04 11:52:05 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:52:05 [Information] HTTP "GET" "/api/Reports" responded 200 in 22.6574 ms
+2025-11-04 11:52:05 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 26.7137ms
+2025-11-04 11:52:20 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:52:20 [Information] CORS policy execution successful.
+2025-11-04 11:52:20 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 1.0067 ms
+2025-11-04 11:52:20 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 5.0643ms
+2025-11-04 11:52:20 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 102
+2025-11-04 11:52:20 [Information] CORS policy execution successful.
+2025-11-04 11:52:20 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:52:20 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:52:20 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+2025-11-04 11:52:20 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)" in 14.997ms
+2025-11-04 11:52:20 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:52:20 [Error] HTTP "PUT" "/api/Reports/1" responded 500 in 23.3791 ms
+2025-11-04 11:52:20 [Information] Request finished "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - 500 null "text/plain; charset=utf-8" 29.6096ms
+2025-11-04 11:52:42 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:52:42 [Information] CORS policy execution successful.
+2025-11-04 11:52:42 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 4.3495 ms
+2025-11-04 11:52:42 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 59.3264ms
+2025-11-04 11:52:42 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 102
+2025-11-04 11:52:42 [Information] CORS policy execution successful.
+2025-11-04 11:52:42 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:52:42 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:53:52 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-04 11:53:53 [Information] Now listening on: "https://localhost:7168"
+2025-11-04 11:53:53 [Information] Now listening on: "http://localhost:5069"
+2025-11-04 11:53:53 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-04 11:53:53 [Information] Hosting environment: "Development"
+2025-11-04 11:53:53 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-04 11:53:53 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-04 11:53:55 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 152.5541 ms
+2025-11-04 11:53:55 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-04 11:53:55 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-04 11:53:55 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2355.0195ms
+2025-11-04 11:53:55 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 17.6039ms
+2025-11-04 11:53:56 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 60.0705ms
+2025-11-04 11:53:56 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-04 11:53:56 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 95.9679 ms
+2025-11-04 11:53:56 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 102.7547ms
+2025-11-04 11:54:04 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:54:04 [Information] CORS policy execution successful.
+2025-11-04 11:54:04 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 10.5433 ms
+2025-11-04 11:54:04 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 21.8454ms
+2025-11-04 11:54:04 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 102
+2025-11-04 11:54:04 [Information] CORS policy execution successful.
+2025-11-04 11:54:04 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:54:04 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:19 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:54:19 [Information] CORS policy execution successful.
+2025-11-04 11:54:19 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 1.4772 ms
+2025-11-04 11:54:19 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 5.4021ms
+2025-11-04 11:54:19 [Information] Executing "OkObjectResult", writing value of type '"DataObjects.ReportDefinition"'.
+2025-11-04 11:54:19 [Information] Request starting "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - "application/json" 102
+2025-11-04 11:54:19 [Information] CORS policy execution successful.
+2025-11-04 11:54:19 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:54:19 [Information] Route matched with "{action = \"UpdateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateReport(Int32, DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:19 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)" in 14439.4807ms
+2025-11-04 11:54:19 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:54:19 [Information] HTTP "PUT" "/api/Reports/1" responded 200 in 14656.0886 ms
+2025-11-04 11:54:19 [Information] Request finished "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - 200 null "application/json; charset=utf-8" 14662.9171ms
+2025-11-04 11:54:23 [Information] Executing "OkObjectResult", writing value of type '"DataObjects.ReportDefinition"'.
+2025-11-04 11:54:23 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)" in 3933.7775ms
+2025-11-04 11:54:23 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.UpdateReport (GenericReportsAPI)"'
+2025-11-04 11:54:23 [Information] HTTP "PUT" "/api/Reports/1" responded 200 in 3952.0814 ms
+2025-11-04 11:54:23 [Information] Request finished "HTTP/2" "PUT" "https"://"localhost:7168""""/api/Reports/1""" - 200 null "application/json; charset=utf-8" 3970.8928ms
+2025-11-04 11:54:23 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:23 [Information] CORS policy execution successful.
+2025-11-04 11:54:23 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 9.6958 ms
+2025-11-04 11:54:23 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 17.19ms
+2025-11-04 11:54:23 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:23 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:23 [Information] CORS policy execution successful.
+2025-11-04 11:54:23 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.1326 ms
+2025-11-04 11:54:23 [Information] CORS policy execution successful.
+2025-11-04 11:54:23 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 13.8511ms
+2025-11-04 11:54:23 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:23 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:23 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:54:23 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 29.6079ms
+2025-11-04 11:54:23 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:23 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:23 [Information] CORS policy execution successful.
+2025-11-04 11:54:23 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:23 [Information] HTTP "GET" "/api/Reports" responded 200 in 59.7572 ms
+2025-11-04 11:54:23 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 71.1075ms
+2025-11-04 11:54:23 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:23 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:54:23 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 11.4198ms
+2025-11-04 11:54:23 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:23 [Information] HTTP "GET" "/api/Reports" responded 200 in 31.4406 ms
+2025-11-04 11:54:23 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 37.6959ms
+2025-11-04 11:54:34 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:54:34 [Information] CORS policy execution successful.
+2025-11-04 11:54:34 [Information] HTTP "OPTIONS" "/api/Reports/1" responded 204 in 0.9983 ms
+2025-11-04 11:54:34 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 5.7875ms
+2025-11-04 11:54:34 [Information] Request starting "HTTP/2" "DELETE" "https"://"localhost:7168""""/api/Reports/1""" - null null
+2025-11-04 11:54:34 [Information] CORS policy execution successful.
+2025-11-04 11:54:34 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.DeleteReport (GenericReportsAPI)"'
+2025-11-04 11:54:34 [Information] Route matched with "{action = \"DeleteReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteReport(Int32)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:34 [Information] Executing StatusCodeResult, setting HTTP status code 204
+2025-11-04 11:54:34 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.DeleteReport (GenericReportsAPI)" in 13.1419ms
+2025-11-04 11:54:34 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.DeleteReport (GenericReportsAPI)"'
+2025-11-04 11:54:34 [Information] HTTP "DELETE" "/api/Reports/1" responded 204 in 23.7843 ms
+2025-11-04 11:54:34 [Information] Request finished "HTTP/2" "DELETE" "https"://"localhost:7168""""/api/Reports/1""" - 204 null null 29.8789ms
+2025-11-04 11:54:34 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:34 [Information] CORS policy execution successful.
+2025-11-04 11:54:34 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 0.8797 ms
+2025-11-04 11:54:34 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 5.5381ms
+2025-11-04 11:54:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:34 [Information] CORS policy execution successful.
+2025-11-04 11:54:34 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:34 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:34 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:54:34 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 2.8326ms
+2025-11-04 11:54:34 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:34 [Information] HTTP "GET" "/api/Reports" responded 200 in 17.2797 ms
+2025-11-04 11:54:34 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 22.706ms
+2025-11-04 11:54:39 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:39 [Information] CORS policy execution successful.
+2025-11-04 11:54:39 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:39 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:39 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:54:39 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 27.9553ms
+2025-11-04 11:54:39 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:54:39 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:39 [Information] CORS policy execution successful.
+2025-11-04 11:54:39 [Information] HTTP "GET" "/api/Reports" responded 200 in 67.4466 ms
+2025-11-04 11:54:39 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:39 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 75.4584ms
+2025-11-04 11:54:39 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:54:39 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:54:39 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 3.6863ms
+2025-11-04 11:54:39 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:54:39 [Information] HTTP "GET" "/api/Reports" responded 200 in 22.5221 ms
+2025-11-04 11:54:39 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 27.4239ms
+2025-11-04 11:55:08 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:55:08 [Information] CORS policy execution successful.
+2025-11-04 11:55:08 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.1596 ms
+2025-11-04 11:55:08 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 50.0388ms
+2025-11-04 11:55:08 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - "application/json" 102
+2025-11-04 11:55:08 [Information] CORS policy execution successful.
+2025-11-04 11:55:08 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:55:08 [Information] Route matched with "{action = \"CreateReport\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateReport(DataObjects.ReportDefinition)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:55:08 [Information] Executing "CreatedAtRouteResult", writing value of type '"DataObjects.ReportDefinition"'.
+2025-11-04 11:55:08 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)" in 26.944ms
+2025-11-04 11:55:08 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.CreateReport (GenericReportsAPI)"'
+2025-11-04 11:55:08 [Information] HTTP "POST" "/api/Reports" responded 201 in 46.4973 ms
+2025-11-04 11:55:08 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Reports""" - 201 null "application/json; charset=utf-8" 55.1292ms
+2025-11-04 11:55:08 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:55:08 [Information] CORS policy execution successful.
+2025-11-04 11:55:08 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:55:08 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:55:08 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:55:08 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 20.6677ms
+2025-11-04 11:55:08 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:55:08 [Information] HTTP "GET" "/api/Reports" responded 200 in 40.1743 ms
+2025-11-04 11:55:08 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 43.8905ms
+2025-11-04 11:55:37 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:55:37 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:55:37 [Information] CORS policy execution successful.
+2025-11-04 11:55:37 [Information] CORS policy execution successful.
+2025-11-04 11:55:37 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 11.9975 ms
+2025-11-04 11:55:37 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.9121 ms
+2025-11-04 11:55:37 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 56.6969ms
+2025-11-04 11:55:37 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 57.7445ms
+2025-11-04 11:55:37 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:55:37 [Information] CORS policy execution successful.
+2025-11-04 11:55:37 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:55:37 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:55:37 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:55:37 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 3.7883ms
+2025-11-04 11:55:37 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-04 11:55:37 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:55:37 [Information] CORS policy execution successful.
+2025-11-04 11:55:37 [Information] HTTP "GET" "/api/Reports" responded 200 in 16.8129 ms
+2025-11-04 11:55:37 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:55:37 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 26.8669ms
+2025-11-04 11:55:37 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-04 11:55:37 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-04 11:55:37 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 3.6955ms
+2025-11-04 11:55:37 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-04 11:55:37 [Information] HTTP "GET" "/api/Reports" responded 200 in 16.9748 ms
+2025-11-04 11:55:37 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 21.3762ms

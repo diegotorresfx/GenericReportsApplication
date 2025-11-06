@@ -9,3 +9,4 @@ D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataObjects\obj\Debug\net8
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataObjects\obj\Debug\net8.0\refint\DataObjects.dll
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataObjects\obj\Debug\net8.0\DataObjects.pdb
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataObjects\obj\Debug\net8.0\ref\DataObjects.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataObjects\obj\Debug\net8.0\DataObjects.sourcelink.json

@@ -15,3 +15,4 @@ D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\refint\DataLayer.dll
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.pdb
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\ref\DataLayer.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\DataLayer\obj\Debug\net8.0\DataLayer.sourcelink.json

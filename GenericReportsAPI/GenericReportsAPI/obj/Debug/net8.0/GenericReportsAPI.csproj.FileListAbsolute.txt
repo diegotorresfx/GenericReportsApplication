@@ -109,3 +109,4 @@ D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI\obj\Debu
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI\obj\Debug\net8.0\GenericReportsAPI.pdb
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI\obj\Debug\net8.0\GenericReportsAPI.genruntimeconfig.cache
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI\obj\Debug\net8.0\ref\GenericReportsAPI.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI\obj\Debug\net8.0\GenericReportsAPI.sourcelink.json

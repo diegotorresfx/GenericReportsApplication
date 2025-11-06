@@ -13,3 +13,4 @@ D:\SpectatorProyects\GenericReports\GenericReportsAPI\BusinessLogic\obj\Debug\ne
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\BusinessLogic\obj\Debug\net8.0\refint\BusinessLogic.dll
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\BusinessLogic\obj\Debug\net8.0\BusinessLogic.sourcelink.json

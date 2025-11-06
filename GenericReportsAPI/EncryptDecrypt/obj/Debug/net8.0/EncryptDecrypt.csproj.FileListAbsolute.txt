@@ -9,3 +9,4 @@ D:\SpectatorProyects\GenericReports\GenericReportsAPI\EncryptDecrypt\obj\Debug\n
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\EncryptDecrypt\obj\Debug\net8.0\refint\EncryptDecrypt.dll
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\EncryptDecrypt\obj\Debug\net8.0\EncryptDecrypt.pdb
 D:\SpectatorProyects\GenericReports\GenericReportsAPI\EncryptDecrypt\obj\Debug\net8.0\ref\EncryptDecrypt.dll
+D:\SpectatorProyects\GenericReports\GenericReportsAPI\EncryptDecrypt\obj\Debug\net8.0\EncryptDecrypt.sourcelink.json
