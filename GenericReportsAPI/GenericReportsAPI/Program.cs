@@ -124,6 +124,9 @@ try
 
     builder.Services.AddAuthorization();
 
+    builder.Services.AddScoped<IReportsRepository, ReportsRepository>();
+    builder.Services.AddScoped<IReportRunner, ReportRunner>();
+
     // Servicio emisor de tokens
     builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
     builder.Services.AddScoped<IReportsRepository, ReportsRepository>();

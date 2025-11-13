@@ -1,0 +1,19 @@
+{
+  "COMMON": {
+    "EXECUTE_REPORT": "Execute report",
+    "EXCEL_ALL": "Excel (all)",
+    "EXCEL_FILTERED": "Excel (filtered)",
+    "PDF_ALL": "PDF (all)",
+    "PDF_FILTERED": "PDF (filtered)",
+    "GLOBAL_SEARCH": "Search in all fields",
+    "RESULT_SET": "Result Set {{index}}",
+    "TIMEOUT": "Timeout (s)",
+    "ADD_PARAM": "Add parameter",
+    "PARAM_JSON_RO": "Sent parameters (JSON - read only)",
+    "STORED_PROCEDURE": "Stored Procedure",
+    "CONNECTION_STRING": "Connection String",
+    "REPORT_CALCULATOR": "Report Calculator",
+    "REPORTS": "Reports",
+    "ADMIN": "Admin"
+  }
+}

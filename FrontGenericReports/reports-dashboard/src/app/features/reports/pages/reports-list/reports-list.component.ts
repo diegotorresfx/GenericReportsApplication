@@ -10,14 +10,15 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-
+import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-reports-list',
   standalone: true,
   imports: [
     NgIf, DatePipe, NgClass, 
     MatCardModule, MatFormFieldModule, MatInputModule,
-    MatTableModule, MatPaginatorModule, MatSortModule, MatIconModule, MatProgressSpinnerModule
+    MatTableModule, MatPaginatorModule, MatSortModule, MatIconModule, MatProgressSpinnerModule, TranslateModule
   ],
   templateUrl: './reports-list.component.html',
   styleUrls: ['./reports-list.component.scss']
@@ -31,7 +32,11 @@ export class ReportsListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private svc: ReportsListService) {}
+  constructor(private svc: ReportsListService, private router: Router) {}
+
+  open(r: ReportDefinition) {
+    this.router.navigate(['/reports/run'], { queryParams: { id: r.id } });
+  }
 
   ngOnInit(): void {
     this.load();

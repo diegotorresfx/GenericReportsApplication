@@ -1,0 +1,733 @@
+2025-11-06 12:58:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 12:58:31 [Information] Now listening on: "https://localhost:7168"
+2025-11-06 12:58:31 [Information] Now listening on: "http://localhost:5069"
+2025-11-06 12:58:31 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-06 12:58:31 [Information] Hosting environment: "Development"
+2025-11-06 12:58:31 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-06 12:58:32 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - null null
+2025-11-06 12:58:34 [Information] HTTP "GET" "/swagger" responded 301 in 16.7163 ms
+2025-11-06 12:58:34 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - 301 0 null 2341.476ms
+2025-11-06 12:58:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-06 12:58:34 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 133.4830 ms
+2025-11-06 12:58:34 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 141.9356ms
+2025-11-06 12:58:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - null null
+2025-11-06 12:58:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - null null
+2025-11-06 12:58:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - null null
+2025-11-06 12:58:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-06 12:58:34 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 16.2583ms
+2025-11-06 12:58:34 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-06 12:58:34 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2025-11-06 12:58:35 [Information] HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 91.3747 ms
+2025-11-06 12:58:35 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - 200 143943 "text/css" 103.4753ms
+2025-11-06 12:58:35 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2025-11-06 12:58:35 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2025-11-06 12:58:35 [Information] HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 143.8347 ms
+2025-11-06 12:58:35 [Information] HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 148.1059 ms
+2025-11-06 12:58:35 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - 200 339486 "text/javascript" 155.1035ms
+2025-11-06 12:58:35 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - 200 1096145 "text/javascript" 172.6134ms
+2025-11-06 12:58:35 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 182.7715ms
+2025-11-06 12:58:35 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-06 12:58:35 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 176.4121 ms
+2025-11-06 12:58:35 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 209.226ms
+2025-11-06 13:02:04 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 334
+2025-11-06 13:02:04 [Information] CORS policy execution failed.
+2025-11-06 13:02:04 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:02:04 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2025-11-06 13:02:04 [Information] AuthenticationScheme: "Bearer" was challenged.
+2025-11-06 13:02:04 [Information] HTTP "POST" "/api/ReportRun/execute" responded 401 in 107.6435 ms
+2025-11-06 13:02:04 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 401 0 null 115.8766ms
+2025-11-06 13:03:12 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 826
+2025-11-06 13:03:12 [Information] CORS policy execution failed.
+2025-11-06 13:03:12 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:03:12 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:03:12 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-06 13:03:12 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-06 13:03:12 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 114.9307ms
+2025-11-06 13:03:12 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:03:12 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 158.6371 ms
+2025-11-06 13:03:12 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 175.5332ms
+2025-11-06 13:03:32 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 334
+2025-11-06 13:03:32 [Information] CORS policy execution failed.
+2025-11-06 13:03:32 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:03:32 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:03:32 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:03:32 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 3.4539ms
+2025-11-06 13:03:32 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:03:32 [Error] HTTP "POST" "/api/ReportRun/execute" responded 500 in 85.2564 ms
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-06 13:03:32 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-06 13:03:32 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 500 null "text/plain; charset=utf-8" 132.9154ms
+2025-11-06 13:08:37 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 13:08:37 [Information] Now listening on: "https://localhost:7168"
+2025-11-06 13:08:37 [Information] Now listening on: "http://localhost:5069"
+2025-11-06 13:08:37 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-06 13:08:37 [Information] Hosting environment: "Development"
+2025-11-06 13:08:37 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-06 13:08:38 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-06 13:08:40 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 164.8344 ms
+2025-11-06 13:08:40 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2335.4664ms
+2025-11-06 13:08:40 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-06 13:08:40 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-06 13:08:40 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 7.6159ms
+2025-11-06 13:08:40 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 62.5479ms
+2025-11-06 13:08:41 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-06 13:08:41 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 110.5859 ms
+2025-11-06 13:08:41 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 117.2694ms
+2025-11-06 13:09:37 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 826
+2025-11-06 13:09:37 [Information] CORS policy execution failed.
+2025-11-06 13:09:37 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:09:38 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:09:38 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-06 13:09:38 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-06 13:09:38 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 76.9181ms
+2025-11-06 13:09:38 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:09:38 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 164.8382 ms
+2025-11-06 13:09:38 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 176.6417ms
+2025-11-06 13:10:29 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 334
+2025-11-06 13:10:29 [Information] CORS policy execution failed.
+2025-11-06 13:10:29 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:10:29 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:10:29 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:10:29 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 2.4497ms
+2025-11-06 13:10:29 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:10:29 [Error] HTTP "POST" "/api/ReportRun/execute" responded 500 in 65.2382 ms
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-06 13:10:29 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-06 13:10:29 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 500 null "text/plain; charset=utf-8" 123.5164ms
+2025-11-06 13:10:33 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 333
+2025-11-06 13:10:33 [Information] CORS policy execution failed.
+2025-11-06 13:10:33 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:10:33 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:10:34 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:10:34 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 0.7325ms
+2025-11-06 13:10:34 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:10:34 [Error] HTTP "POST" "/api/ReportRun/execute" responded 500 in 28.1495 ms
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-06 13:10:34 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-06 13:10:34 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 500 null "text/plain; charset=utf-8" 76.8731ms
+2025-11-06 13:10:56 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 333
+2025-11-06 13:10:56 [Information] CORS policy execution failed.
+2025-11-06 13:10:56 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:10:56 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:10:56 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:10:56 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 0.549ms
+2025-11-06 13:10:56 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:10:56 [Error] HTTP "POST" "/api/ReportRun/execute" responded 500 in 10.8881 ms
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-06 13:10:56 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-06 13:10:56 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 500 null "text/plain; charset=utf-8" 66.1778ms
+2025-11-06 13:11:20 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 333
+2025-11-06 13:11:20 [Information] CORS policy execution failed.
+2025-11-06 13:11:20 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:11:20 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:11:20 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:11:20 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 0.5315ms
+2025-11-06 13:11:20 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:11:20 [Error] HTTP "POST" "/api/ReportRun/execute" responded 500 in 12.5724 ms
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-06 13:11:20 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLogic.IReportRunner' while attempting to activate 'GenericReportsAPI.Controllers.ReportRunController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-06 13:11:20 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 500 null "text/plain; charset=utf-8" 48.7621ms
+2025-11-06 13:14:51 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 13:14:51 [Information] Now listening on: "https://localhost:7168"
+2025-11-06 13:14:51 [Information] Now listening on: "http://localhost:5069"
+2025-11-06 13:14:51 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-06 13:14:51 [Information] Hosting environment: "Development"
+2025-11-06 13:14:51 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-06 13:14:53 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-06 13:14:55 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 143.1210 ms
+2025-11-06 13:14:55 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-06 13:14:55 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-06 13:14:55 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2748.1628ms
+2025-11-06 13:14:55 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 17.4141ms
+2025-11-06 13:14:55 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 70.0532ms
+2025-11-06 13:14:56 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-06 13:14:56 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 143.2624 ms
+2025-11-06 13:14:56 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 152.7276ms
+2025-11-06 13:15:35 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 826
+2025-11-06 13:15:35 [Information] CORS policy execution failed.
+2025-11-06 13:15:35 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:15:36 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:15:36 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-06 13:15:36 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-06 13:15:36 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 80.6274ms
+2025-11-06 13:15:36 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:15:36 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 182.6744 ms
+2025-11-06 13:15:36 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 193.7466ms
+2025-11-06 13:16:29 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 334
+2025-11-06 13:16:29 [Information] CORS policy execution failed.
+2025-11-06 13:16:29 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:16:29 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:16:29 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:17:24 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 13:17:25 [Information] Now listening on: "https://localhost:7168"
+2025-11-06 13:17:25 [Information] Now listening on: "http://localhost:5069"
+2025-11-06 13:17:25 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-06 13:17:25 [Information] Hosting environment: "Development"
+2025-11-06 13:17:25 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-06 13:17:25 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-06 13:17:28 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 200.4944 ms
+2025-11-06 13:17:28 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2406.0008ms
+2025-11-06 13:17:28 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-06 13:17:28 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-06 13:17:28 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 20.431ms
+2025-11-06 13:17:28 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 65.9324ms
+2025-11-06 13:17:28 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-06 13:17:28 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 159.9707 ms
+2025-11-06 13:17:28 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 165.9069ms
+2025-11-06 13:18:02 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 826
+2025-11-06 13:18:02 [Information] CORS policy execution failed.
+2025-11-06 13:18:02 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:18:02 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:18:02 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-06 13:18:02 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-06 13:18:02 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 69.6702ms
+2025-11-06 13:18:02 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 13:18:02 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 156.9307 ms
+2025-11-06 13:18:02 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 168.9955ms
+2025-11-06 13:18:47 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 235
+2025-11-06 13:18:47 [Information] CORS policy execution failed.
+2025-11-06 13:18:47 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:18:48 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:18:48 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:18:48 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-11-06 13:18:48 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 46.7363ms
+2025-11-06 13:18:48 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:18:48 [Information] HTTP "POST" "/api/ReportRun/execute" responded 400 in 120.5572 ms
+2025-11-06 13:18:48 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 400 null "application/json; charset=utf-8" 127.7361ms
+2025-11-06 13:19:12 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 236
+2025-11-06 13:19:12 [Information] CORS policy execution failed.
+2025-11-06 13:19:12 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:19:12 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:19:12 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 13:20:02 [Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2025-11-06 13:20:02 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 49172.495ms
+2025-11-06 13:20:02 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:20:02 [Information] HTTP "POST" "/api/ReportRun/execute" responded 400 in 49186.9553 ms
+2025-11-06 13:20:02 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 400 null "application/json; charset=utf-8" 49210.9963ms
+2025-11-06 13:20:45 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 236
+2025-11-06 13:20:45 [Information] CORS policy execution failed.
+2025-11-06 13:20:45 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 13:20:45 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 13:20:45 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 14:05:59 [Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2025-11-06 14:05:59 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 2714902.9072ms
+2025-11-06 14:05:59 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 14:05:59 [Information] HTTP "POST" "/api/ReportRun/execute" responded 400 in 2714912.8611 ms
+2025-11-06 14:05:59 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 400 null "application/json; charset=utf-8" 2714923.9985ms
+2025-11-06 14:08:57 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 14:08:57 [Information] Now listening on: "https://localhost:7168"
+2025-11-06 14:08:57 [Information] Now listening on: "http://localhost:5069"
+2025-11-06 14:08:57 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-06 14:08:57 [Information] Hosting environment: "Development"
+2025-11-06 14:08:57 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-06 14:08:58 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-06 14:09:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 141.9451 ms
+2025-11-06 14:09:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2291.6564ms
+2025-11-06 14:09:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-06 14:09:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-06 14:09:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 10.1203ms
+2025-11-06 14:09:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 51.7852ms
+2025-11-06 14:09:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-06 14:09:01 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 118.3877 ms
+2025-11-06 14:09:01 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 123.5398ms
+2025-11-06 14:09:50 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 826
+2025-11-06 14:09:50 [Information] CORS policy execution failed.
+2025-11-06 14:09:50 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 14:09:50 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 14:09:50 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-06 14:09:51 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-06 14:09:51 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 118.2752ms
+2025-11-06 14:09:51 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 14:09:51 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 257.9987 ms
+2025-11-06 14:09:51 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 271.6229ms
+2025-11-06 14:11:07 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 235
+2025-11-06 14:11:07 [Information] CORS policy execution failed.
+2025-11-06 14:11:07 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 14:11:07 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 14:11:07 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 14:11:07 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2025-11-06 14:11:07 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 26.5409ms
+2025-11-06 14:11:07 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 14:11:07 [Information] HTTP "POST" "/api/ReportRun/execute" responded 400 in 93.8188 ms
+2025-11-06 14:11:07 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 400 null "application/json; charset=utf-8" 105.0777ms
+2025-11-06 14:11:20 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 236
+2025-11-06 14:11:20 [Information] CORS policy execution failed.
+2025-11-06 14:11:20 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 14:11:20 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 14:11:20 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 14:11:51 [Information] Executing "OkObjectResult", writing value of type '"DataObjects.ExecuteReportResponse"'.
+2025-11-06 14:11:53 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 32840.2656ms
+2025-11-06 14:11:53 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 14:11:53 [Information] HTTP "POST" "/api/ReportRun/execute" responded 200 in 32861.5475 ms
+2025-11-06 14:11:53 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 200 null "application/json; charset=utf-8" 32884.3483ms
+2025-11-06 14:29:18 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - "application/json" 226
+2025-11-06 14:29:18 [Information] CORS policy execution failed.
+2025-11-06 14:29:18 [Information] Request origin "https://localhost:7168" does not have permission to access the resource.
+2025-11-06 14:29:18 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 14:29:18 [Information] Route matched with "{action = \"ExecuteAnyReport\", controller = \"ReportRun\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ExecuteReportResponse] ExecuteAnyReport(DataObjects.ExecuteAnyReportRequest)" on controller "GenericReportsAPI.Controllers.ReportRunController" ("GenericReportsAPI").
+2025-11-06 14:29:22 [Information] Executing "OkObjectResult", writing value of type '"DataObjects.ExecuteReportResponse"'.
+2025-11-06 14:29:22 [Information] Executed action "GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)" in 4547.2506ms
+2025-11-06 14:29:22 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportRunController.ExecuteAnyReport (GenericReportsAPI)"'
+2025-11-06 14:29:22 [Information] HTTP "POST" "/api/ReportRun/execute" responded 200 in 4557.9103 ms
+2025-11-06 14:29:22 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/ReportRun/execute""" - 200 null "application/json; charset=utf-8" 4564.1989ms
+2025-11-06 14:30:37 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 14:30:37 [Information] Now listening on: "https://localhost:7168"
+2025-11-06 14:30:37 [Information] Now listening on: "http://localhost:5069"
+2025-11-06 14:30:37 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-06 14:30:37 [Information] Hosting environment: "Development"
+2025-11-06 14:30:37 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-06 14:30:38 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-06 14:30:40 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 137.9616 ms
+2025-11-06 14:30:40 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-06 14:30:40 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-06 14:30:40 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2365.2312ms
+2025-11-06 14:30:40 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 19.4748ms
+2025-11-06 14:30:40 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 73.2272ms
+2025-11-06 14:30:40 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-06 14:30:41 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 129.0015 ms
+2025-11-06 14:30:41 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 133.1379ms
+2025-11-06 14:55:09 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - null null
+2025-11-06 14:55:09 [Information] CORS policy execution successful.
+2025-11-06 14:55:09 [Information] HTTP "OPTIONS" "/api/Auth/login" responded 204 in 6.3807 ms
+2025-11-06 14:55:09 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - 204 null null 12.245ms
+2025-11-06 14:55:09 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 817
+2025-11-06 14:55:09 [Information] CORS policy execution successful.
+2025-11-06 14:55:09 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 14:55:09 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-06 14:55:09 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-06 14:55:09 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 104.4758ms
+2025-11-06 14:55:09 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-06 14:55:09 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 192.5988 ms
+2025-11-06 14:55:09 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 197.6693ms
+2025-11-06 14:55:10 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 14:55:10 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 14:55:10 [Information] CORS policy execution successful.
+2025-11-06 14:55:10 [Information] CORS policy execution successful.
+2025-11-06 14:55:10 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.1207 ms
+2025-11-06 14:55:10 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.2474 ms
+2025-11-06 14:55:10 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 15.4871ms
+2025-11-06 14:55:10 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 24.4989ms
+2025-11-06 14:55:10 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 14:55:10 [Information] CORS policy execution successful.
+2025-11-06 14:55:10 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 14:55:10 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 14:55:13 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 14:55:13 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 3470.2749ms
+2025-11-06 14:55:13 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 14:55:13 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 14:55:13 [Information] CORS policy execution successful.
+2025-11-06 14:55:13 [Information] HTTP "GET" "/api/Reports" responded 200 in 3546.0212 ms
+2025-11-06 14:55:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 3552.9147ms
+2025-11-06 14:55:13 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 14:55:13 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 14:55:13 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 14:55:13 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 8.5907ms
+2025-11-06 14:55:13 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 14:55:13 [Information] HTTP "GET" "/api/Reports" responded 200 in 22.0456 ms
+2025-11-06 14:55:13 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 27.0862ms
+2025-11-06 15:04:01 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:04:01 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:04:01 [Information] CORS policy execution successful.
+2025-11-06 15:04:01 [Information] CORS policy execution successful.
+2025-11-06 15:04:01 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.5697 ms
+2025-11-06 15:04:01 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.4682 ms
+2025-11-06 15:04:01 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 10.781ms
+2025-11-06 15:04:01 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:04:01 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 15.1956ms
+2025-11-06 15:04:01 [Information] CORS policy execution successful.
+2025-11-06 15:04:01 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:04:01 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:04:01 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 136.5668ms
+2025-11-06 15:04:01 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:04:01 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] CORS policy execution successful.
+2025-11-06 15:04:01 [Information] HTTP "GET" "/api/Reports" responded 200 in 163.8876 ms
+2025-11-06 15:04:01 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 171.1009ms
+2025-11-06 15:04:01 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:04:01 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:04:01 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 9.1798ms
+2025-11-06 15:04:01 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] HTTP "GET" "/api/Reports" responded 200 in 54.6613 ms
+2025-11-06 15:04:01 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 499 null "application/json; charset=utf-8" 71.5638ms
+2025-11-06 15:04:01 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:04:01 [Information] CORS policy execution successful.
+2025-11-06 15:04:01 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:04:01 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:04:01 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 7.7485ms
+2025-11-06 15:04:01 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:04:01 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] CORS policy execution successful.
+2025-11-06 15:04:01 [Information] HTTP "GET" "/api/Reports" responded 200 in 22.6784 ms
+2025-11-06 15:04:01 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 29.5476ms
+2025-11-06 15:04:01 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:04:01 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:04:01 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 3.0936ms
+2025-11-06 15:04:01 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:04:01 [Information] HTTP "GET" "/api/Reports" responded 200 in 19.1689 ms
+2025-11-06 15:04:01 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 26.804ms
+2025-11-06 15:06:20 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:06:20 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:06:20 [Information] CORS policy execution successful.
+2025-11-06 15:06:20 [Information] CORS policy execution successful.
+2025-11-06 15:06:20 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.1446 ms
+2025-11-06 15:06:20 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.9739 ms
+2025-11-06 15:06:20 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 36.7222ms
+2025-11-06 15:06:20 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:06:20 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 16.8857ms
+2025-11-06 15:06:20 [Information] CORS policy execution successful.
+2025-11-06 15:06:20 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:06:20 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:06:20 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:06:20 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 4.2789ms
+2025-11-06 15:06:20 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:06:20 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:06:20 [Information] HTTP "GET" "/api/Reports" responded 200 in 18.2711 ms
+2025-11-06 15:06:20 [Information] CORS policy execution successful.
+2025-11-06 15:06:20 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 30.0143ms
+2025-11-06 15:06:20 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:06:20 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:06:20 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:06:20 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 2.606ms
+2025-11-06 15:06:20 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:06:20 [Information] HTTP "GET" "/api/Reports" responded 200 in 17.4679 ms
+2025-11-06 15:06:20 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 22.2424ms
+2025-11-06 15:22:10 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:22:10 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:22:10 [Information] CORS policy execution successful.
+2025-11-06 15:22:10 [Information] CORS policy execution successful.
+2025-11-06 15:22:10 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.1844 ms
+2025-11-06 15:22:10 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.8395 ms
+2025-11-06 15:22:10 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 9.9588ms
+2025-11-06 15:22:10 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:22:10 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 14.0955ms
+2025-11-06 15:22:10 [Information] CORS policy execution successful.
+2025-11-06 15:22:10 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:22:10 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:22:12 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:22:12 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 2724.8426ms
+2025-11-06 15:22:12 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:22:12 [Information] HTTP "GET" "/api/Reports" responded 200 in 2740.3607 ms
+2025-11-06 15:22:12 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 2745.0798ms
+2025-11-06 15:22:12 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:22:12 [Information] CORS policy execution successful.
+2025-11-06 15:22:12 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:22:12 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:22:12 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:22:12 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 6.1202ms
+2025-11-06 15:22:12 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:22:12 [Information] HTTP "GET" "/api/Reports" responded 200 in 13.9111 ms
+2025-11-06 15:22:12 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 19.7124ms
+2025-11-06 15:24:45 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:24:45 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:24:45 [Information] CORS policy execution successful.
+2025-11-06 15:24:45 [Information] CORS policy execution successful.
+2025-11-06 15:24:45 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 3.1500 ms
+2025-11-06 15:24:45 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.8526 ms
+2025-11-06 15:24:45 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 19.3208ms
+2025-11-06 15:24:45 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 15.3657ms
+2025-11-06 15:24:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:24:45 [Information] CORS policy execution successful.
+2025-11-06 15:24:45 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:24:45 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:24:45 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:24:45 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 10.3828ms
+2025-11-06 15:24:45 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:24:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:24:45 [Information] HTTP "GET" "/api/Reports" responded 200 in 23.9440 ms
+2025-11-06 15:24:45 [Information] CORS policy execution successful.
+2025-11-06 15:24:45 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 38.2106ms
+2025-11-06 15:24:45 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:24:45 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:24:45 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:24:45 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 2.3496ms
+2025-11-06 15:24:45 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:24:45 [Information] HTTP "GET" "/api/Reports" responded 200 in 19.8889 ms
+2025-11-06 15:24:45 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 33.4282ms
+2025-11-06 15:24:50 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/2""" - null null
+2025-11-06 15:24:50 [Information] CORS policy execution successful.
+2025-11-06 15:24:50 [Information] HTTP "OPTIONS" "/api/Reports/2" responded 204 in 1.1468 ms
+2025-11-06 15:24:50 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/2""" - 204 null null 9.1336ms
+2025-11-06 15:24:50 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports/2""" - null null
+2025-11-06 15:24:50 [Information] CORS policy execution successful.
+2025-11-06 15:24:50 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)"'
+2025-11-06 15:24:50 [Information] Route matched with "{action = \"GetReportById\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ReportDefinition]] GetReportById(Int32)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:24:50 [Information] Executing "OkObjectResult", writing value of type '"DataObjects.ReportDefinition"'.
+2025-11-06 15:24:50 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)" in 55.385ms
+2025-11-06 15:24:50 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)"'
+2025-11-06 15:24:50 [Information] HTTP "GET" "/api/Reports/2" responded 200 in 66.5909 ms
+2025-11-06 15:24:50 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports/2""" - 200 null "application/json; charset=utf-8" 74.1898ms
+2025-11-06 15:25:14 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:14 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:14 [Information] CORS policy execution successful.
+2025-11-06 15:25:14 [Information] CORS policy execution successful.
+2025-11-06 15:25:14 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 4.2063 ms
+2025-11-06 15:25:14 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 2.9431 ms
+2025-11-06 15:25:14 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 11.6978ms
+2025-11-06 15:25:14 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 20.9742ms
+2025-11-06 15:25:14 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:14 [Information] CORS policy execution successful.
+2025-11-06 15:25:14 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:14 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:25:14 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:25:14 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 2.1338ms
+2025-11-06 15:25:14 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:14 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:14 [Information] HTTP "GET" "/api/Reports" responded 200 in 13.6020 ms
+2025-11-06 15:25:14 [Information] CORS policy execution successful.
+2025-11-06 15:25:14 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 29.5062ms
+2025-11-06 15:25:14 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:14 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:25:14 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:25:14 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 2.0451ms
+2025-11-06 15:25:14 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:14 [Information] HTTP "GET" "/api/Reports" responded 200 in 15.9675 ms
+2025-11-06 15:25:14 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 20.4987ms
+2025-11-06 15:25:18 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/2""" - null null
+2025-11-06 15:25:18 [Information] CORS policy execution successful.
+2025-11-06 15:25:18 [Information] HTTP "OPTIONS" "/api/Reports/2" responded 204 in 1.0575 ms
+2025-11-06 15:25:18 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/2""" - 204 null null 5.0713ms
+2025-11-06 15:25:18 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports/2""" - null null
+2025-11-06 15:25:18 [Information] CORS policy execution successful.
+2025-11-06 15:25:18 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)"'
+2025-11-06 15:25:18 [Information] Route matched with "{action = \"GetReportById\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ReportDefinition]] GetReportById(Int32)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:25:18 [Information] Executing "OkObjectResult", writing value of type '"DataObjects.ReportDefinition"'.
+2025-11-06 15:25:18 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)" in 2.4614ms
+2025-11-06 15:25:18 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)"'
+2025-11-06 15:25:18 [Information] HTTP "GET" "/api/Reports/2" responded 200 in 12.8769 ms
+2025-11-06 15:25:18 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports/2""" - 200 null "application/json; charset=utf-8" 19.0338ms
+2025-11-06 15:25:32 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:32 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:32 [Information] CORS policy execution successful.
+2025-11-06 15:25:32 [Information] CORS policy execution successful.
+2025-11-06 15:25:32 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 1.0547 ms
+2025-11-06 15:25:32 [Information] HTTP "OPTIONS" "/api/Reports" responded 204 in 13.9604 ms
+2025-11-06 15:25:32 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 23.8596ms
+2025-11-06 15:25:32 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports""" - 204 null null 32.1585ms
+2025-11-06 15:25:32 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:32 [Information] CORS policy execution successful.
+2025-11-06 15:25:32 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:32 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:25:32 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:25:32 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 30.1825ms
+2025-11-06 15:25:32 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:32 [Information] HTTP "GET" "/api/Reports" responded 200 in 43.7651 ms
+2025-11-06 15:25:32 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 50.0435ms
+2025-11-06 15:25:32 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - null null
+2025-11-06 15:25:32 [Information] CORS policy execution successful.
+2025-11-06 15:25:32 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:32 [Information] Route matched with "{action = \"GetAllReports\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DataObjects.ReportDefinition]]] GetAllReports()" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:25:32 [Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[DataObjects.ReportDefinition, DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2025-11-06 15:25:32 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)" in 2.3677ms
+2025-11-06 15:25:32 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetAllReports (GenericReportsAPI)"'
+2025-11-06 15:25:32 [Information] HTTP "GET" "/api/Reports" responded 200 in 14.7482 ms
+2025-11-06 15:25:32 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports""" - 200 null "application/json; charset=utf-8" 52.2929ms
+2025-11-06 15:25:41 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/2""" - null null
+2025-11-06 15:25:41 [Information] CORS policy execution successful.
+2025-11-06 15:25:41 [Information] HTTP "OPTIONS" "/api/Reports/2" responded 204 in 1.5038 ms
+2025-11-06 15:25:41 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Reports/2""" - 204 null null 8.9245ms
+2025-11-06 15:25:41 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports/2""" - null null
+2025-11-06 15:25:41 [Information] CORS policy execution successful.
+2025-11-06 15:25:41 [Information] Executing endpoint '"GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)"'
+2025-11-06 15:25:41 [Information] Route matched with "{action = \"GetReportById\", controller = \"Reports\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DataObjects.ReportDefinition]] GetReportById(Int32)" on controller "GenericReportsAPI.Controllers.ReportsController" ("GenericReportsAPI").
+2025-11-06 15:25:41 [Information] Executing "OkObjectResult", writing value of type '"DataObjects.ReportDefinition"'.
+2025-11-06 15:25:41 [Information] Executed action "GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)" in 4.0862ms
+2025-11-06 15:25:41 [Information] Executed endpoint '"GenericReportsAPI.Controllers.ReportsController.GetReportById (GenericReportsAPI)"'
+2025-11-06 15:25:41 [Information] HTTP "GET" "/api/Reports/2" responded 200 in 13.2644 ms
+2025-11-06 15:25:41 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/api/Reports/2""" - 200 null "application/json; charset=utf-8" 18.8801ms

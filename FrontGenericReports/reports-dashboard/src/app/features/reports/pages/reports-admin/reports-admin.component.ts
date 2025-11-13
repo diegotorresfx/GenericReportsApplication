@@ -14,14 +14,14 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-reports-admin',
   standalone: true,
   imports: [
     NgIf, DatePipe, NgClass, FormsModule, ReactiveFormsModule,
     MatCardModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, MatSlideToggleModule,
-    MatTableModule, MatPaginatorModule, MatSortModule, MatSnackBarModule, MatDialogModule
+    MatTableModule, MatPaginatorModule, MatSortModule, MatSnackBarModule, MatDialogModule, TranslateModule
   ],
   templateUrl: './reports-admin.component.html',
   styleUrls: ['./reports-admin.component.scss']

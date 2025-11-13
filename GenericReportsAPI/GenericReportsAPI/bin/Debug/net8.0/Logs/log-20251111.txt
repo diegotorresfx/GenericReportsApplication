@@ -1,0 +1,31 @@
+2025-11-11 09:16:26 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-11 09:16:27 [Information] Now listening on: "https://localhost:7168"
+2025-11-11 09:16:27 [Information] Now listening on: "http://localhost:5069"
+2025-11-11 09:16:27 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-11 09:16:27 [Information] Hosting environment: "Development"
+2025-11-11 09:16:27 [Information] Content root path: "D:\SpectatorProyects\GenericReports\GenericReportsAPI\GenericReportsAPI"
+2025-11-11 09:16:28 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - null null
+2025-11-11 09:16:31 [Information] HTTP "GET" "/swagger" responded 301 in 14.6126 ms
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - 301 0 null 2470.6735ms
+2025-11-11 09:16:31 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-11 09:16:31 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 136.0930 ms
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 144.4341ms
+2025-11-11 09:16:31 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - null null
+2025-11-11 09:16:31 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - null null
+2025-11-11 09:16:31 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - null null
+2025-11-11 09:16:31 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2025-11-11 09:16:31 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2025-11-11 09:16:31 [Information] HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 59.2609 ms
+2025-11-11 09:16:31 [Information] HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 56.7069 ms
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - 200 339486 "text/javascript" 68.0074ms
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - 200 143943 "text/css" 74.2131ms
+2025-11-11 09:16:31 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-11 09:16:31 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-11 09:16:31 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 17.722ms
+2025-11-11 09:16:31 [Information] HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 91.0825 ms
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - 200 1096145 "text/javascript" 102.9473ms
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 110.4098ms
+2025-11-11 09:16:31 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-11 09:16:31 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 143.5483 ms
+2025-11-11 09:16:31 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 148.1377ms

@@ -1,0 +1,124 @@
+<mat-card class="p-3" *ngIf="report as rep">
+  <div class="d-flex align-items-center gap-2 mb-3">
+    <mat-icon>calculate</mat-icon>
+    <h3 class="m-0">{{ 'COMMON.REPORT_CALCULATOR' | translate }}</h3>
+  </div>
+
+  <!-- SP y Connection solo lectura -->
+  <div class="row g-3" [formGroup]="form">
+    <div class="col-lg-4">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>{{ 'COMMON.STORED_PROCEDURE' | translate }}</mat-label>
+        <input matInput formControlName="storedProcedure" readonly>
+      </mat-form-field>
+    </div>
+
+    <div class="col-lg-5">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>{{ 'COMMON.CONNECTION_STRING' | translate }}</mat-label>
+        <input matInput formControlName="connectionString" readonly>
+      </mat-form-field>
+    </div>
+
+    <div class="col-lg-3">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>{{ 'COMMON.TIMEOUT' | translate }}</mat-label>
+        <input matInput type="number" [value]="timeoutSeconds" readonly>
+      </mat-form-field>
+    </div>
+
+    <div class="col-12">
+      <mat-form-field appearance="fill" class="w-100">
+        <mat-label>{{ 'COMMON.PARAM_JSON_RO' | translate }}</mat-label>
+        <textarea matInput rows="5" [value]="paramsJson" readonly></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+</mat-card>
+
+<!-- Acciones -->
+<div class="d-flex flex-wrap gap-2 my-3 align-items-center">
+  <button mat-raised-button color="primary" (click)="executeUsingCurrentJson()" [disabled]="!report">
+    <mat-icon>play_arrow</mat-icon>&nbsp;{{ 'COMMON.EXECUTE_REPORT' | translate }}
+  </button>
+
+  <!-- Export -->
+  <button mat-stroked-button (click)="exportExcel(false)">
+    <mat-icon>file_download</mat-icon>&nbsp;{{ 'COMMON.EXCEL_PAGE' | translate }}
+  </button>
+  <button mat-stroked-button (click)="exportExcel(true)">
+    <mat-icon>file_download</mat-icon>&nbsp;{{ 'COMMON.EXCEL_FILTERED' | translate }}
+  </button>
+  <button mat-stroked-button (click)="exportPdf(false)">
+    <mat-icon>picture_as_pdf</mat-icon>&nbsp;{{ 'COMMON.PDF_PAGE' | translate }}
+  </button>
+  <button mat-stroked-button (click)="exportPdf(true)">
+    <mat-icon>picture_as_pdf</mat-icon>&nbsp;{{ 'COMMON.PDF_FILTERED' | translate }}
+  </button>
+
+  <!-- Filtro global -->
+  <mat-form-field appearance="outline" class="ms-auto" style="min-width: 280px;">
+    <mat-label>{{ 'COMMON.GLOBAL_SEARCH' | translate }}</mat-label>
+    <input matInput (keyup)="applyGlobalFilter($any($event.target).value)" placeholder="{{ 'COMMON.GLOBAL_SEARCH' | translate }}" />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</div>
+
+<!-- Selector de result set (si viene más de 1) -->
+<div class="d-flex gap-2 mb-2" *ngIf="response?.resultSets?.length">
+  <mat-form-field appearance="outline" style="width: 260px;">
+    <mat-label>{{ 'COMMON.RESULT_SET_LABEL' | translate }}</mat-label>
+    <mat-select [value]="selectedSetIndex" (selectionChange)="pickResultSet($any($event.value))">
+      <mat-option *ngFor="let rs of response!.resultSets; let i = index" [value]="i">
+        {{ 'COMMON.RESULT_SET' | translate:{ index: (i + 1) } }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<!-- Tabla -->
+<mat-card class="p-3" *ngIf="response">
+  <div class="table-responsive">
+    <table mat-table [dataSource]="ds" matSort class="mat-elevation-z2 w-100">
+
+      <!-- Cabecera principal -->
+      <ng-container *ngFor="let c of displayedColumns" [matColumnDef]="c">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ c }}</th>
+        <td mat-cell *matCellDef="let row">{{ row[c] }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+      <!-- Fila de filtros por columna -->
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-form-field appearance="outline" class="w-100">
+          <input matInput [placeholder]="'COMMON.FILTER' | translate"
+                 (keyup)="applyColumnFilter(displayedColumns[0], $any($event.target).value)">
+        </mat-form-field>
+      </th>
+
+      <ng-container *ngFor="let c of displayedColumns; let idx = index">
+        <ng-container *ngIf="idx > 0">
+          <th mat-header-cell *matHeaderCellDef>
+            <mat-form-field appearance="outline" class="w-100">
+              <input matInput [placeholder]="'COMMON.FILTER' | translate"
+                     (keyup)="applyColumnFilter(c, $any($event.target).value)">
+            </mat-form-field>
+          </th>
+        </ng-container>
+      </ng-container>
+
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+
+  <mat-paginator [pageSize]="30"
+                 [pageSizeOptions]="[5,10,25,30,50,100]"
+                 showFirstLastButtons>
+  </mat-paginator>
+</mat-card>
+
+<div class="text-center py-3" *ngIf="loading">
+  <mat-icon class="spin">autorenew</mat-icon>
+  {{ 'COMMON.EXECUTING' | translate }}
+</div>
