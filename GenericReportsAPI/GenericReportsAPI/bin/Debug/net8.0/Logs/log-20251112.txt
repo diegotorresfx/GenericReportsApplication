@@ -29,3 +29,51 @@
 2025-11-12 08:12:09 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
 2025-11-12 08:12:09 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 227.5585 ms
 2025-11-12 08:12:09 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 233.2518ms
+2025-11-12 22:47:42 [Information] User profile is available. Using '"C:\Users\diesg\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-12 22:47:44 [Information] Now listening on: "https://localhost:7168"
+2025-11-12 22:47:44 [Information] Now listening on: "http://localhost:5069"
+2025-11-12 22:47:44 [Information] Application started. Press Ctrl+C to shut down.
+2025-11-12 22:47:44 [Information] Hosting environment: "Development"
+2025-11-12 22:47:44 [Information] Content root path: "C:\Proyects\Spectator\GenericReportsApplication\GenericReportsAPI\GenericReportsAPI"
+2025-11-12 22:47:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - null null
+2025-11-12 22:47:45 [Information] HTTP "GET" "/swagger" responded 301 in 52.0538 ms
+2025-11-12 22:47:45 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger""" - 301 0 null 553.1841ms
+2025-11-12 22:47:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - null null
+2025-11-12 22:47:45 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 221.5277 ms
+2025-11-12 22:47:45 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 248.6175ms
+2025-11-12 22:47:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - null null
+2025-11-12 22:47:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - null null
+2025-11-12 22:47:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - null null
+2025-11-12 22:47:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2025-11-12 22:47:45 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - null null
+2025-11-12 22:47:45 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_framework/aspnetcore-browser-refresh.js""" - 200 13770 "application/javascript; charset=utf-8" 52.0157ms
+2025-11-12 22:47:46 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2025-11-12 22:47:46 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2025-11-12 22:47:46 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2025-11-12 22:47:46 [Information] HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 217.4139 ms
+2025-11-12 22:47:46 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-standalone-preset.js""" - 200 339486 "text/javascript" 289.585ms
+2025-11-12 22:47:46 [Information] HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 229.9418 ms
+2025-11-12 22:47:46 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui-bundle.js""" - 200 1096145 "text/javascript" 305.4911ms
+2025-11-12 22:47:46 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 324.8997ms
+2025-11-12 22:47:46 [Information] HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 130.5443 ms
+2025-11-12 22:47:46 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/swagger-ui.css""" - 200 143943 "text/css" 399.5141ms
+2025-11-12 22:47:46 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - null null
+2025-11-12 22:47:46 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/favicon-32x32.png""" - null null
+2025-11-12 22:47:46 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2025-11-12 22:47:46 [Information] HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 5.8011 ms
+2025-11-12 22:47:46 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 21.9539ms
+2025-11-12 22:47:47 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 277.5360 ms
+2025-11-12 22:47:47 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7168""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 296.9564ms
+2025-11-12 22:59:06 [Information] Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - null null
+2025-11-12 22:59:06 [Information] CORS policy execution successful.
+2025-11-12 22:59:06 [Information] HTTP "OPTIONS" "/api/Auth/login" responded 204 in 19.4769 ms
+2025-11-12 22:59:06 [Information] Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7168""""/api/Auth/login""" - 204 null null 51.9376ms
+2025-11-12 22:59:06 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - "application/json" 817
+2025-11-12 22:59:06 [Information] CORS policy execution successful.
+2025-11-12 22:59:07 [Information] Executing endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-12 22:59:07 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(ApiAsesores.Controllers.LoginRequest)" on controller "ApiAsesores.Controllers.AuthController" ("GenericReportsAPI").
+2025-11-12 22:59:07 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2025-11-12 22:59:07 [Information] Executed action "ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)" in 240.7731ms
+2025-11-12 22:59:07 [Information] Executed endpoint '"ApiAsesores.Controllers.AuthController.Login (GenericReportsAPI)"'
+2025-11-12 22:59:07 [Information] HTTP "POST" "/api/Auth/login" responded 200 in 580.6830 ms
+2025-11-12 22:59:07 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7168""""/api/Auth/login""" - 200 null "application/json; charset=utf-8" 614.7326ms

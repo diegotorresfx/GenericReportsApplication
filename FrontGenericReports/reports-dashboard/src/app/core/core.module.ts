@@ -1,9 +1,8 @@
+// src/app/core/core.module.ts
 import { NgModule } from '@angular/core';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { AuthInterceptor } from './interceptors/auth.interceptor';
 
 @NgModule({
-  imports: [HttpClientModule],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }]
+  imports: [],
+  providers: []
 })
 export class CoreModule {}

@@ -2,34 +2,55 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-const KEY = 'repdash.lang';
-const FALLBACK = 'es';
-const SUPPORTED = ['es','en','pt'];
+export interface LanguageOption {
+  code: string;
+  label: string;
+}
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
-  constructor(private i18n: TranslateService) {
-    const saved = localStorage.getItem(KEY);
-    const browser = this.i18n.getBrowserLang();
+  private readonly STORAGE_KEY = 'app_lang';
 
-    const lang = saved && SUPPORTED.includes(saved)
-      ? saved
-      : (browser && SUPPORTED.includes(browser) ? browser : FALLBACK);
+  private readonly _supported: LanguageOption[] = [
+    { code: 'es', label: 'Español' },
+    { code: 'en', label: 'English' },
+    { code: 'pt', label: 'Português' },
+    { code: 'fr', label: 'Français' }
+    // puedes añadir más de los que ya generamos JSON
+  ];
 
-    this.setLang(lang);
+  private current = 'es';
+
+  constructor(private translate: TranslateService) {
+    const codes = this._supported.map(l => l.code);
+    this.translate.addLangs(codes);
+
+    const saved = localStorage.getItem(this.STORAGE_KEY);
+    const browser = (this.translate.getBrowserLang() || 'es').split('-')[0];
+
+    const initial =
+      (saved && codes.includes(saved)) ? saved :
+      (codes.includes(browser) ? browser : 'es');
+
+    this.current = initial;
+
+    // configuramos idioma y fallback
+    this.translate.setDefaultLang('es'); // fallbackLang efectivo
+    this.translate.use(initial);
   }
 
-  get current(): string {
-    return this.i18n.currentLang || FALLBACK;
+  getSupported(): LanguageOption[] {
+    return this._supported;
   }
 
-  setLang(lang: string) {
-    if (!SUPPORTED.includes(lang)) lang = FALLBACK;
-    this.i18n.use(lang);
-    localStorage.setItem(KEY, lang);
+  getCurrent(): string {
+    return this.current;
   }
 
-  getSupported() {
-    return SUPPORTED.slice();
+  setLanguage(code: string) {
+    if (!this._supported.find(l => l.code === code)) return;
+    this.current = code;
+    this.translate.use(code);
+    localStorage.setItem(this.STORAGE_KEY, code);
   }
 }

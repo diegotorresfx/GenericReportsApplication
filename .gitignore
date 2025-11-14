@@ -1,0 +1,116 @@
+##############################
+# GLOBAL
+##############################
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+
+##############################
+# ANGULAR - FrontGenericReports
+##############################
+
+FrontGenericReports/node_modules/
+FrontGenericReports/dist/
+FrontGenericReports/out-tsc/
+FrontGenericReports/.angular/
+FrontGenericReports/.angular/cache/
+FrontGenericReports/.env
+FrontGenericReports/.env.*.local
+
+# Environments
+FrontGenericReports/src/environments/environment*.ts
+
+# IDE Angular
+FrontGenericReports/.idea/
+FrontGenericReports/*.iml
+
+# Angular tests
+FrontGenericReports/coverage/
+FrontGenericReports/.nyc_output/
+FrontGenericReports/test-output/
+
+
+##############################
+# .NET API - GenericReportsAPI
+##############################
+
+GenericReportsAPI/bin/
+GenericReportsAPI/obj/
+GenericReportsAPI/out/
+GenericReportsAPI/publish/
+GenericReportsAPI/App_Data/
+
+# User files
+GenericReportsAPI/*.user
+GenericReportsAPI/*.suo
+GenericReportsAPI/*.userosscache
+
+# Visual Studio
+.vs/
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+nuget.exe
+
+# Secrets / sensitive configs
+GenericReportsAPI/appsettings.Development.json
+GenericReportsAPI/appsettings.Local.json
+GenericReportsAPI/appsettings.*.json
+GenericReportsAPI/*.pfx
+GenericReportsAPI/*.cer
+GenericReportsAPI/*.p12
+
+# EF Migrations backups
+GenericReportsAPI/Migrations/Backup/
+GenericReportsAPI/*.jfm
+
+
+##############################
+# VISUAL STUDIO CODE
+##############################
+.vscode/
+.history/
+*.code-workspace
+
+
+##############################
+# TESTING
+##############################
+TestResults/
+*.coverage
+*.coveragexml
+
+
+##############################
+# TOOLS & TEMP FILES
+##############################
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+
+##############################
+# ALLOWED FILES
+##############################
+# Keep ReportsScript.txt
+!ReportsScript.txt

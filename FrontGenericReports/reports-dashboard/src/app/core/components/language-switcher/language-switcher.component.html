@@ -1,1 +1,9 @@
-<p>language-switcher works!</p>
+<!-- src/app/core/components/language-switcher/language-switcher.component.html -->
+<mat-form-field appearance="outline" class="lang-switcher">
+  <mat-label>{{ 'LANGUAGE.LABEL' | translate }}</mat-label>
+  <mat-select [value]="current" (selectionChange)="onChange($event.value)">
+    <mat-option *ngFor="let l of languages" [value]="l.code">
+      {{ l.label }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

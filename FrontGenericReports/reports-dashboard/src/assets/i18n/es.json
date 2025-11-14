@@ -1,4 +1,10 @@
 {
+  "APP": {
+    "TITLE": "Reportes genéricos"
+  },
+  "LANGUAGE": {
+    "LABEL": "Idioma"
+  },
   "COMMON": {
     "REPORT_CALCULATOR": "Calculadora de Reporte",
     "STORED_PROCEDURE": "Stored Procedure",

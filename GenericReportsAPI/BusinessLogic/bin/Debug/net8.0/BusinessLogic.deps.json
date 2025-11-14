@@ -16,7 +16,10 @@
       },
       "DataObjects/1.0.0": {
         "runtime": {
-          "DataObjects.dll": {}
+          "DataObjects.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -59,18 +59,19 @@
   <!-- Filtro global -->
   <mat-form-field appearance="outline" class="ms-auto" style="min-width: 280px;">
     <mat-label>{{ 'COMMON.GLOBAL_SEARCH' | translate }}</mat-label>
-    <input matInput (keyup)="applyGlobalFilter($any($event.target).value)" placeholder="{{ 'COMMON.GLOBAL_SEARCH' | translate }}" />
+    <input matInput (keyup)="applyGlobalFilter($any($event.target).value)"
+           [placeholder]="'COMMON.GLOBAL_SEARCH' | translate" />
     <mat-icon matSuffix>search</mat-icon>
   </mat-form-field>
 </div>
 
-<!-- Selector de result set (si viene más de 1) -->
+<!-- Selector de result set -->
 <div class="d-flex gap-2 mb-2" *ngIf="response?.resultSets?.length">
   <mat-form-field appearance="outline" style="width: 260px;">
     <mat-label>{{ 'COMMON.RESULT_SET_LABEL' | translate }}</mat-label>
     <mat-select [value]="selectedSetIndex" (selectionChange)="pickResultSet($any($event.value))">
       <mat-option *ngFor="let rs of response!.resultSets; let i = index" [value]="i">
-        {{ 'COMMON.RESULT_SET' | translate:{ index: (i + 1) } }}
+        {{ 'COMMON.RESULT_SET' | translate:{ index: i + 1 } }}
       </mat-option>
     </mat-select>
   </mat-form-field>
@@ -92,7 +93,8 @@
       <!-- Fila de filtros por columna -->
       <th mat-header-cell *matHeaderCellDef>
         <mat-form-field appearance="outline" class="w-100">
-          <input matInput [placeholder]="'COMMON.FILTER' | translate"
+          <input matInput
+                 [placeholder]="'COMMON.FILTER' | translate"
                  (keyup)="applyColumnFilter(displayedColumns[0], $any($event.target).value)">
         </mat-form-field>
       </th>
@@ -101,7 +103,8 @@
         <ng-container *ngIf="idx > 0">
           <th mat-header-cell *matHeaderCellDef>
             <mat-form-field appearance="outline" class="w-100">
-              <input matInput [placeholder]="'COMMON.FILTER' | translate"
+              <input matInput
+                     [placeholder]="'COMMON.FILTER' | translate"
                      (keyup)="applyColumnFilter(c, $any($event.target).value)">
             </mat-form-field>
           </th>
@@ -112,9 +115,10 @@
     </table>
   </div>
 
-  <mat-paginator [pageSize]="30"
-                 [pageSizeOptions]="[5,10,25,30,50,100]"
-                 showFirstLastButtons>
+  <mat-paginator
+    [pageSize]="30"
+    [pageSizeOptions]="[5,10,25,30,50,100]"
+    showFirstLastButtons>
   </mat-paginator>
 </mat-card>
 

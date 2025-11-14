@@ -1,31 +1,48 @@
 // src/app/core/components/language-switcher/language-switcher.component.ts
-import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+// Angular Material
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
-import { LanguageService } from '../../services/language.service';
+import { MatOptionModule } from '@angular/material/core';
+
+// i18n
+import { TranslateModule } from '@ngx-translate/core';
+
+// Servicio de idioma
+import { LanguageService, LanguageOption } from '../../services/language.service';
 
 @Component({
   selector: 'app-language-switcher',
   standalone: true,
-  imports: [NgFor, MatSelectModule, MatIconModule],
-  template: `
-    <div class="lang-box">
-      <mat-icon class="me-1">language</mat-icon>
-      <mat-select [value]="langSvc.current" (selectionChange)="onChange($any($event.value))">
-        <mat-option *ngFor="let l of langs" [value]="l">
-          {{ l.toUpperCase() }}
-        </mat-option>
-      </mat-select>
-    </div>
-  `,
+  imports: [
+    CommonModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatIconModule,
+    TranslateModule
+  ],
+  templateUrl: './language-switcher.component.html',
   styleUrls: ['./language-switcher.component.scss']
 })
-export class LanguageSwitcherComponent {
-  // Getter: evita usar langSvc antes de inyectarse
-  get langs(): string[] { return this.langSvc.getSupported(); }
+export class LanguageSwitcherComponent implements OnInit {
 
-  constructor(public langSvc: LanguageService) {}
+  // Lo que te marcaba error:
+  languages: LanguageOption[] = [];
+  current = '';
 
-  onChange(l: string) { this.langSvc.setLang(l); }
+  constructor(private langSvc: LanguageService) { }
+
+  ngOnInit(): void {
+    this.languages = this.langSvc.getSupported();
+    this.current = this.langSvc.getCurrent();
+  }
+
+  onChange(code: string) {
+    this.langSvc.setLanguage(code);
+    this.current = code;
+  }
 }

@@ -27,7 +27,7 @@
         <div class="col-md-4">
           <mat-form-field appearance="outline" class="w-100">
             <mat-label>{{ 'COMMON.NAME' | translate }}</mat-label>
-            <input matInput formControlName="name" placeholder="StartDate">
+            <input matInput formControlName="name" placeholder="p.ej. StartDate">
           </mat-form-field>
         </div>
 
@@ -44,7 +44,7 @@
           </mat-form-field>
         </div>
 
-        <!-- Valor -->
+        <!-- Valor normal -->
         <div class="col-md-4" *ngIf="p.get('type')?.value !== 'date'; else dateField">
           <mat-form-field appearance="outline" class="w-100">
             <mat-label>{{ 'COMMON.VALUE' | translate }}</mat-label>
@@ -56,6 +56,7 @@
           </mat-form-field>
         </div>
 
+        <!-- Fecha -->
         <ng-template #dateField>
           <div class="col-md-4">
             <mat-form-field appearance="outline" class="w-100">
@@ -67,6 +68,7 @@
           </div>
         </ng-template>
 
+        <!-- Quitar -->
         <div class="col-md-1 d-flex align-items-center">
           <button mat-icon-button color="warn" (click)="removeParam(i)" aria-label="Eliminar">
             <mat-icon>delete</mat-icon>
@@ -101,5 +103,6 @@
         <app-report-run-table [report]="rep"></app-report-run-table>
       </div>
     </mat-tab>
+    <!-- Pestañas futuras de charts -->
   </mat-tab-group>
 </mat-card>
