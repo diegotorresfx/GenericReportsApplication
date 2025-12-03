@@ -1,3 +1,12 @@
+// src/app/shared/models/report.model.ts
+export type ParamType = 'string' | 'int' | 'decimal' | 'date';
+
+export interface ReportParameterDefinition {
+  name: string;
+  type: ParamType;
+  defaultValue?: string | number | null;
+}
+
 export interface ReportDefinition {
   id: number;
   name: string;
@@ -5,16 +14,16 @@ export interface ReportDefinition {
   storedProcedure: string;
   enabled: boolean;
   createdAtUtc: string;
-  updatedAtUtc: string | null;
+  // Nuevo: definición de parámetros
+  parametersDefinition?: ReportParameterDefinition[] | null;
 }
 
-// Enviar SOLO esto al crear
 export interface ReportCreateDto {
   name: string;
   connectionString: string;
   storedProcedure: string;
   enabled: boolean;
+  parametersDefinition?: ReportParameterDefinition[];
 }
 
-// Enviar SOLO esto al actualizar
 export type ReportUpdateDto = ReportCreateDto;

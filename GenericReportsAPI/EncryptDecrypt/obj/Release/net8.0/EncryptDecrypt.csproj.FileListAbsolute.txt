@@ -1,0 +1,12 @@
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\bin\Release\net8.0\EncryptDecrypt.deps.json
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\bin\Release\net8.0\EncryptDecrypt.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\bin\Release\net8.0\EncryptDecrypt.pdb
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\EncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\EncryptDecrypt.AssemblyInfoInputs.cache
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\EncryptDecrypt.AssemblyInfo.cs
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\EncryptDecrypt.csproj.CoreCompileInputs.cache
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\EncryptDecrypt.sourcelink.json
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\EncryptDecrypt.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\refint\EncryptDecrypt.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\EncryptDecrypt.pdb
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\EncryptDecrypt\obj\Release\net8.0\ref\EncryptDecrypt.dll

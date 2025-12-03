@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {
   FormBuilder, Validators, ReactiveFormsModule, FormsModule,
-  FormGroup, FormArray, FormControl
+  FormGroup, FormArray
 } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { NgIf, NgFor, JsonPipe } from '@angular/common';
@@ -20,6 +20,8 @@ import { ReportsListService } from '../../services/reports-list.service';
 import { ReportDefinition } from '@app/shared/models/report.model';
 import { ReportRunTableComponent } from '../report-run-table/report-run-table.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { CountByColumnChartComponent } from '../../charts/count-by-column-chart/count-by-column-chart.component';
+
 type ParamType = 'string' | 'int' | 'decimal' | 'date';
 
 @Component({
@@ -30,7 +32,7 @@ type ParamType = 'string' | 'int' | 'decimal' | 'date';
     MatCardModule, MatTabsModule, MatIconModule,
     MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule,
     MatButtonModule, MatSnackBarModule, MatSelectModule,
-    ReportRunTableComponent, TranslateModule
+    ReportRunTableComponent, TranslateModule, CountByColumnChartComponent
   ],
   templateUrl: './report-run-tabs.component.html',
   styleUrls: ['./report-run-tabs.component.scss']
@@ -42,6 +44,9 @@ export class ReportRunTabsComponent implements OnInit {
   paramsForm!: FormGroup;
 
   @ViewChild(ReportRunTableComponent) table!: ReportRunTableComponent;
+
+  // Columna seleccionada para el gráfico
+  selectedColumn: string | null = null;
 
   constructor(
     private fb: FormBuilder,
@@ -141,16 +146,16 @@ export class ReportRunTabsComponent implements OnInit {
   }
 
   generateParamsJson() {
-  if (!this.report) {
-    this.snack.open('No hay reporte cargado', 'Cerrar', { duration: 2500 });
-    return;
+    if (!this.report) {
+      this.snack.open('No hay reporte cargado', 'Cerrar', { duration: 2500 });
+      return;
+    }
+
+    const paramsObj = this.buildParamsObject(); // { ... } o {}
+    // Actualiza el JSON del hijo (solo lectura) y su timeout
+    this.table.paramsJson = JSON.stringify(paramsObj, null, 2);
+    this.table.timeoutSeconds = Number(this.paramsForm.get('timeoutSeconds')?.value ?? 600) || 600;
+
+    this.snack.open('Parámetros generados. Revisa el JSON y luego ejecuta el reporte.', 'OK', { duration: 2500 });
   }
-
-  const paramsObj = this.buildParamsObject(); // { ... } o {}
-  // Actualiza el JSON del hijo (solo lectura) y su timeout
-  this.table.paramsJson = JSON.stringify(paramsObj, null, 2);
-  this.table.timeoutSeconds = Number(this.paramsForm.get('timeoutSeconds')?.value ?? 600) || 600;
-
-  this.snack.open('Parámetros generados. Revisa el JSON y luego ejecuta el reporte.', 'OK', { duration: 2500 });
-}
 }

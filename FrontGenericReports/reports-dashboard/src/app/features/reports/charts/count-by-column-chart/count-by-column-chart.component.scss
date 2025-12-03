@@ -1,0 +1,27 @@
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 35%, #e3f2fd 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  canvas {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.chart-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #607d8b;
+  font-style: italic;
+}

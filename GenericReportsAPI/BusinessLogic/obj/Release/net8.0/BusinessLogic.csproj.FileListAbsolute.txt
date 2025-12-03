@@ -1,0 +1,16 @@
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\bin\Release\net8.0\BusinessLogic.deps.json
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\bin\Release\net8.0\BusinessLogic.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\bin\Release\net8.0\BusinessLogic.pdb
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\bin\Release\net8.0\DataObjects.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\bin\Release\net8.0\DataObjects.pdb
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.csproj.AssemblyReference.cache
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.AssemblyInfoInputs.cache
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.AssemblyInfo.cs
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.sourcelink.json
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\Business.CF5D6E35.Up2Date
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\refint\BusinessLogic.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\BusinessLogic.pdb
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\BusinessLogic\obj\Release\net8.0\ref\BusinessLogic.dll

@@ -1,0 +1,9 @@
+<div class="chart-wrapper" *ngIf="columnToCount && rows?.length; else noData">
+  <canvas #canvas></canvas>
+</div>
+
+<ng-template #noData>
+  <div class="chart-empty">
+    <p>No hay datos para mostrar el gráfico. Ejecuta el reporte y selecciona una columna.</p>
+  </div>
+</ng-template>

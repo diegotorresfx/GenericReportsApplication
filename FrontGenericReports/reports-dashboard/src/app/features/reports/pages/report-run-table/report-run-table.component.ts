@@ -1,5 +1,6 @@
+// src/app/features/reports/pages/report-run-table/report-run-table.component.ts
 import {
-  Component, OnInit, ViewChild, Input, OnChanges, SimpleChanges, AfterViewInit, ChangeDetectorRef 
+  Component, OnInit, ViewChild, Input, OnChanges, SimpleChanges, AfterViewInit, ChangeDetectorRef
 } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule, FormsModule, FormGroup } from '@angular/forms';
 import { NgIf, NgFor, NgClass, JsonPipe } from '@angular/common';
@@ -18,7 +19,6 @@ import { ReportRunService } from '../../services/report-run.service';
 import { ReportRunResponse } from '@app/shared/models/report-run.model';
 import { ReportDefinition } from '@app/shared/models/report.model';
 
-// Exportación
 import * as XLSX from 'xlsx';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
@@ -43,14 +43,13 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
 
   loading = false;
   columns: string[] = [];
-  displayedColumns: string[] = []; // para header + filtros
+  displayedColumns: string[] = [];
   ds = new MatTableDataSource<any>([]);
   response: ReportRunResponse | null = null;
   selectedSetIndex = 0;
 
-  // Filtros
   globalFilter = '';
-  columnFilters: Record<string, string> = {}; // { Columna: 'valor' }
+  columnFilters: Record<string, string> = {};
 
   form!: FormGroup;
 
@@ -75,8 +74,6 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
       storedProcedure: [{ value: '', disabled: true }, Validators.required],
       connectionString: [{ value: '', disabled: true }, Validators.required],
     });
-
-    // Predicate se define en attachFilterPredicate()
   }
 
   ngOnInit(): void {}
@@ -95,7 +92,6 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
   }
 
   private attachTableHelpers() {
-    // Vincular sort y paginator (y mantenerlos tras cada refresh de datasource)
     Promise.resolve().then(() => {
       if (this.ds) {
         if (this.paginator) this.ds.paginator = this.paginator;
@@ -106,14 +102,12 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
   }
 
   private attachFilterPredicate() {
-    // Filtro combinado: global + por columna
     this.ds.filterPredicate = (row: any, filter: string) => {
       const filters: {
         __global?: string;
         cols?: Record<string, string>;
       } = JSON.parse(filter || '{}');
 
-      // Filtro por columnas
       if (filters?.cols) {
         for (const key of Object.keys(filters.cols)) {
           const needle = (filters.cols[key] || '').trim().toLowerCase();
@@ -123,7 +117,6 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
         }
       }
 
-      // Filtro global
       if (filters?.__global) {
         const g = filters.__global.trim().toLowerCase();
         if (g) {
@@ -135,7 +128,6 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
       return true;
     };
 
-    // Inicial
     this.applyFilters();
   }
 
@@ -169,10 +161,8 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
     this.bindTableFromResponse();
   }
 
-  // Padre establece paramsJson y timeoutSeconds; aquí ejecutamos usando ese JSON actual
   executeUsingCurrentJson() {
     if (!this.report) return;
-
     const paramsObj = this.parseParamsFromJson();
     this.executeWithReport(this.report, paramsObj);
   }
@@ -229,31 +219,21 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
     const colSet = new Set<string>();
     rows.forEach(r => Object.keys(r || {}).forEach(k => colSet.add(k)));
     this.columns = Array.from(colSet);
-    this.displayedColumns = [...this.columns]; // para header y filtros
+    this.displayedColumns = [...this.columns];
 
     this.ds = new MatTableDataSource<any>(rows);
     this.attachTableHelpers();
-    this.applyFilters(); // re-aplicar filtros vigentes
-    this.ds = new MatTableDataSource<any>(rows);
-
-    // Enlace SIEMPRE tras recrear el datasource
-    this.attachTableHelpers();
-
-    // Re-aplicar filtros vigentes (global/columna)
     this.applyFilters();
 
-    // Forzar que Angular cree el paginator y luego enlazar de nuevo
     this.cdr.detectChanges();
     this.attachTableHelpers();
 
-    // Page size por defecto = 30
     if (this.paginator) {
       this.paginator.pageSize = 30;
       this.paginator.firstPage();
     }
   }
 
-  // ------- Export helpers -------
   private getCurrentPageData(): any[] {
     const all = this.ds.filteredData || [];
     if (!this.paginator) return all;
@@ -302,7 +282,6 @@ export class ReportRunTableComponent implements OnInit, OnChanges, AfterViewInit
   }
 
   private getFilteredData(): any[] {
-    // MatTableDataSource ya aplica filtros y sort:
     return this.ds?.filteredData ?? [];
   }
 

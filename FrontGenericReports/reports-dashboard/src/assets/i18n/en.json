@@ -43,6 +43,11 @@
     "AVAILABLE_REPORTS": "Available reports",
     "SEARCH": "Search",
     "SEARCH_PLACEHOLDER": "Name or StoredProcedure",
-    "LIST": "List"
+    "LIST": "List",
+    "PARAMETERS": "Parameters",
+"DEFAULT_VALUE": "Default value",
+"CHART_TITLE": "Row count by first column",
+"CHART_X": "X axis",
+"CHART_Y": "Y axis (row count)"
   }
 }

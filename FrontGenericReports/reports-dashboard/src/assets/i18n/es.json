@@ -43,6 +43,12 @@
     "AVAILABLE_REPORTS": "Reportes disponibles",
     "SEARCH": "Buscar",
     "SEARCH_PLACEHOLDER": "Nombre o StoredProcedure",
-    "LIST": "Listado"
+    "LIST": "Listado",
+    "PARAMETERS": "Parámetros",
+"DEFAULT_VALUE": "Valor por defecto",
+"CHART_TITLE": "Conteo de filas por primera columna",
+"CHART_X": "Eje X",
+"CHART_Y": "Eje Y (número de filas)"
+
   }
 }

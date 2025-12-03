@@ -1,0 +1,12 @@
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\bin\Release\net8.0\DataObjects.deps.json
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\bin\Release\net8.0\DataObjects.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\bin\Release\net8.0\DataObjects.pdb
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\DataObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\DataObjects.AssemblyInfoInputs.cache
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\DataObjects.AssemblyInfo.cs
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\DataObjects.csproj.CoreCompileInputs.cache
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\DataObjects.sourcelink.json
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\DataObjects.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\refint\DataObjects.dll
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\DataObjects.pdb
+C:\Proyect\Spectator\GenericReportsApplication\GenericReportsAPI\DataObjects\obj\Release\net8.0\ref\DataObjects.dll

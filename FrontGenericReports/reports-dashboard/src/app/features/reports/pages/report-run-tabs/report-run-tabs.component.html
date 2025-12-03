@@ -98,11 +98,43 @@
   </div>
 
   <mat-tab-group>
+    <!-- TAB 1: Datos (tabla) -->
     <mat-tab [label]="'COMMON.DATA' | translate">
       <div class="mt-3">
         <app-report-run-table [report]="rep"></app-report-run-table>
       </div>
     </mat-tab>
-    <!-- Pestañas futuras de charts -->
+
+    <!-- TAB 2: Gráfico de conteo por columna -->
+    <mat-tab label="Count by column">
+      <div class="mt-3" *ngIf="table?.columns?.length; else noCols">
+        <mat-card class="p-3 mb-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <mat-icon>bar_chart</mat-icon>
+            <h3 class="m-0">Distribución por columna</h3>
+          </div>
+
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Columna a contar</mat-label>
+            <mat-select [(value)]="selectedColumn">
+              <mat-option *ngFor="let col of table.columns" [value]="col">
+                {{ col }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card>
+
+        <app-count-by-column-chart
+          [rows]="table.ds?.filteredData ?? []"
+          [columnToCount]="selectedColumn">
+        </app-count-by-column-chart>
+      </div>
+
+      <ng-template #noCols>
+        <div class="text-muted p-3">
+          Ejecuta primero el reporte para cargar columnas y poder ver el gráfico.
+        </div>
+      </ng-template>
+    </mat-tab>
   </mat-tab-group>
 </mat-card>
