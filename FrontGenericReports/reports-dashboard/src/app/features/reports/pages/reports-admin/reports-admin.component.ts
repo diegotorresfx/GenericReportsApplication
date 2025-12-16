@@ -1,8 +1,23 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ReportsAdminService } from '../../services/reports-admin.service';
-import { ReportDefinition, ReportCreateDto, ReportUpdateDto } from '@app/shared/models/report.model';
-import { FormBuilder, Validators, ReactiveFormsModule, FormsModule, FormGroup } from '@angular/forms';
-import { NgIf, DatePipe, NgClass } from '@angular/common';
+import {
+  ReportDefinition,
+  ReportCreateDto,
+  ReportUpdateDto,
+  ReportParameterDefinition,
+  ParamType
+} from '@app/shared/models/report.model';
+
+import {
+  FormBuilder,
+  Validators,
+  ReactiveFormsModule,
+  FormsModule,
+  FormGroup,
+  FormArray
+} from '@angular/forms';
+
+import { NgIf, NgFor, DatePipe, NgClass } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,14 +29,20 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
 import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-reports-admin',
   standalone: true,
   imports: [
-    NgIf, DatePipe, NgClass, FormsModule, ReactiveFormsModule,
-    MatCardModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, MatSlideToggleModule,
-    MatTableModule, MatPaginatorModule, MatSortModule, MatSnackBarModule, MatDialogModule, TranslateModule
+    NgIf, NgFor, DatePipe, NgClass,
+    FormsModule, ReactiveFormsModule,
+    MatCardModule, MatButtonModule, MatIconModule,
+    MatFormFieldModule, MatInputModule, MatSlideToggleModule,
+    MatTableModule, MatPaginatorModule, MatSortModule,
+    MatSnackBarModule, MatDialogModule, MatSelectModule,
+    TranslateModule
   ],
   templateUrl: './reports-admin.component.html',
   styleUrls: ['./reports-admin.component.scss']
@@ -45,14 +66,39 @@ export class ReportsAdminComponent implements OnInit {
       connectionString: ['', Validators.required],
       storedProcedure: ['', Validators.required],
       enabled: [true],
-      // ❌ NO incluir createdAtUtc/updatedAtUtc en el form (para no enviarlos)
+      // Aquí guardamos la definición de parámetros
+      parametersDefinition: this.fb.array([] as any[])
     });
   }
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  ngOnInit(): void { this.load(); }
+  ngOnInit(): void {
+    this.load();
+  }
+
+  // ===== Helpers para parámetros =====
+
+  get paramsFA(): FormArray {
+    return this.form.get('parametersDefinition') as FormArray;
+  }
+
+  private newParamDefRow(param?: ReportParameterDefinition): FormGroup {
+    return this.fb.group({
+      name: [param?.name ?? '', Validators.required],
+      type: [param?.type ?? ('string' as ParamType), Validators.required],
+      defaultValue: [param?.defaultValue ?? null]
+    });
+  }
+
+  addParamDef() {
+    this.paramsFA.push(this.newParamDefRow());
+  }
+
+  removeParamDef(i: number) {
+    this.paramsFA.removeAt(i);
+  }
 
   private load() {
     this.loading = true;
@@ -69,6 +115,14 @@ export class ReportsAdminComponent implements OnInit {
 
   edit(r: ReportDefinition) {
     this.selected = r;
+
+    // Limpia parámetros anteriores
+    this.paramsFA.clear();
+
+    if (r.parametersDefinition && r.parametersDefinition.length) {
+      r.parametersDefinition.forEach(p => this.paramsFA.push(this.newParamDefRow(p)));
+    }
+
     this.form.patchValue({
       id: r.id,
       name: r.name,
@@ -87,15 +141,39 @@ export class ReportsAdminComponent implements OnInit {
       storedProcedure: '',
       enabled: true
     });
+    this.paramsFA.clear();
+  }
+
+  private buildParamsDefinitionFromForm(): ReportParameterDefinition[] {
+    const result: ReportParameterDefinition[] = [];
+
+    for (const c of this.paramsFA.controls as FormGroup[]) {
+      const name = String(c.get('name')?.value ?? '').trim();
+      const type = c.get('type')?.value as ParamType;
+      const defaultValue = c.get('defaultValue')?.value ?? null;
+
+      if (!name) continue;
+
+      result.push({
+        name,
+        type,
+        defaultValue
+      });
+    }
+
+    return result;
   }
 
   private buildCreateDto(): ReportCreateDto {
     const v = this.form.value;
+    const parametersDefinition = this.buildParamsDefinitionFromForm();
+
     return {
       name: String(v.name ?? '').trim(),
       connectionString: String(v.connectionString ?? '').trim(),
       storedProcedure: String(v.storedProcedure ?? '').trim(),
-      enabled: !!v.enabled
+      enabled: !!v.enabled,
+      parametersDefinition
     };
   }
 
@@ -109,15 +187,21 @@ export class ReportsAdminComponent implements OnInit {
     const dto = this.buildCreateDto();
 
     if (id > 0) {
-      // PUT /api/Reports/{id} con DTO sin fechas/ids
       this.svc.update(id, dto as ReportUpdateDto).subscribe({
-        next: _ => { this.snack.open('Actualizado', 'OK', { duration: 2000 }); this.clear(); this.load(); },
+        next: _ => {
+          this.snack.open('Actualizado', 'OK', { duration: 2000 });
+          this.clear();
+          this.load();
+        },
         error: err => this.handleValidation(err)
       });
     } else {
-      // POST /api/Reports con DTO sin fechas/ids
       this.svc.create(dto).subscribe({
-        next: _ => { this.snack.open('Creado', 'OK', { duration: 2000 }); this.clear(); this.load(); },
+        next: _ => {
+          this.snack.open('Creado', 'OK', { duration: 2000 });
+          this.clear();
+          this.load();
+        },
         error: err => this.handleValidation(err)
       });
     }
@@ -126,13 +210,15 @@ export class ReportsAdminComponent implements OnInit {
   remove(r: ReportDefinition) {
     if (!confirm(`¿Eliminar "${r.name}"?`)) return;
     this.svc.delete(r.id).subscribe({
-      next: _ => { this.snack.open('Eliminado', 'OK', { duration: 2000 }); this.load(); },
+      next: _ => {
+        this.snack.open('Eliminado', 'OK', { duration: 2000 });
+        this.load();
+      },
       error: _ => this.snack.open('Error al eliminar', 'Cerrar', { duration: 2500 })
     });
   }
 
   private handleValidation(err: any) {
-    // Muestra errores de validación del backend si vienen en el formato que pegaste
     const errors = err?.error?.errors;
     if (errors && typeof errors === 'object') {
       const msgs: string[] = [];

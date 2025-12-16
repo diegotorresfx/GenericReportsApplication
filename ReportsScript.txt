@@ -9,6 +9,22 @@ CREATE TABLE SPECTATOR.RG_ReportDefinitions (
 );
 GO
 
+CREATE TABLE SPECTATOR.RG_ReportParameters (
+    Id                INT IDENTITY(1,1) PRIMARY KEY,
+    ReportDefinitionId INT NOT NULL
+        REFERENCES SPECTATOR.RG_ReportDefinitions(Id),
+    ParamName         NVARCHAR(200) NOT NULL,  -- Ej: DaysBack, StartDate
+    ParamType         NVARCHAR(50)  NOT NULL,  -- Ej: int, string, decimal, date
+    DefaultValue      NVARCHAR(4000) NULL,     -- Valor por defecto en texto
+    IsRequired        BIT NOT NULL 
+        CONSTRAINT DF_ReportParameters_IsRequired DEFAULT(0),
+    DisplayOrder      INT NOT NULL 
+        CONSTRAINT DF_ReportParameters_DisplayOrder DEFAULT(0),
+    CreatedAtUtc      DATETIME2(3) NOT NULL 
+        CONSTRAINT DF_ReportParameters_CreatedAtUtc DEFAULT(SYSUTCDATETIME()),
+    UpdatedAtUtc      DATETIME2(3) NULL
+);
+
 -- LISTAR TODOS
 CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportDefinitions_GetAll
 AS
@@ -80,3 +96,478 @@ BEGIN
     SELECT @@ROWCOUNT AS Affected;
 END
 GO
+
+---------------------------------------------------------------
+
+CREATE OR ALTER PROCEDURE SPECTATOR.SP_MOI_R01_24Hours
+    @DaysBack int = 1,           -- p.ej. 1 = últimas 24h
+    @LanguageCode nvarchar(10) = N'en-US'
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @From datetime2 = DATEADD(DAY, -@DaysBack, SYSDATETIME());
+
+    SELECT
+        c.[Name]                      AS [Customer],
+        g.Reference                   AS [Cams ID],
+        l.[Name]                      AS [Location],
+        ac.Code,
+        a.InputNumber                 AS [Zones],
+        t.[Text]                      AS [Event Type],
+        a.DateTimeReceived            AS [Alarm Time],
+        DATEDIFF(MINUTE, a.DateTimeReceived, s.CurrentDateTime) AS [Handling Time (Mins)],
+        u.[Name]                      AS [Operator Name],
+        shs.Comment                   AS [Event Comments]
+    FROM SPECTATOR.SessionHistoryStates          AS shs
+    JOIN SPECTATOR.OperatorHistoryStates         AS ohs ON shs.Id = ohs.Id
+    JOIN SPECTATOR.Users                         AS u   ON ohs.UserId = u.Id
+    JOIN SPECTATOR.Sessions                      AS s   ON shs.SessionId = s.Id
+    JOIN SPECTATOR.Groups                        AS g   ON s.GroupId = g.Id
+    JOIN SPECTATOR.Locations                     AS l   ON g.LocationId = l.Id
+    JOIN SPECTATOR.Customers                     AS c   ON g.CustomerId = c.Id
+    JOIN SPECTATOR.Session_Alarms                AS sa  ON sa.Id = s.Id
+    JOIN SPECTATOR.Alarms                        AS a   ON a.Id = sa.AcceptedAlarmId
+    JOIN SPECTATOR.Alarms_AcceptedAlarms         AS aaa ON sa.AcceptedAlarmId = aaa.Id
+    JOIN SPECTATOR.AlarmCodes                    AS ac  ON aaa.InitialAlarmCodeId = ac.Id
+    JOIN SPECTATOR.TranslationLinks              AS tl  ON ac.NameTextId = tl.Id
+    JOIN SPECTATOR.TranslationLinkTranslations   AS tlt ON tl.Id = tlt.TranslationLinkId
+    JOIN SPECTATOR.Translations                  AS t   ON tlt.TranslationId = t.Id
+    WHERE
+        a.DateTimeReceived >= @From
+        AND t.LanguageCode = @LanguageCode
+        AND shs.Status = 4
+    ORDER BY a.DateTimeReceived DESC;
+END
+GO
+
+
+CREATE OR ALTER PROCEDURE SPECTATOR.SP_MOI_R02_8to2Hours
+    @HoursStart int = -8,        -- más antiguo (e.g., -8)
+    @HoursEnd   int = -2,        -- más reciente (e.g., -2)  (exclusivo)
+    @LanguageCode nvarchar(10) = N'en-US'
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @now datetime2 = SYSDATETIME();
+    IF (@HoursStart > @HoursEnd)
+    BEGIN
+        DECLARE @tmp int = @HoursStart;
+        SET @HoursStart = @HoursEnd;
+        SET @HoursEnd   = @tmp;
+    END
+
+    SELECT
+        c.Name                      AS [Customer],
+        g.Reference                 AS [Cams ID],
+        l.Name                      AS [Location],
+        ac.Code,
+        a.InputNumber               AS [Zones],
+        t.Text                      AS [Event Type],
+        a.DateTimeReceived          AS [Alarm Time],
+        DATEDIFF(MINUTE, a.DateTimeReceived, s.CurrentDateTime) AS [Handling Time (Mins)],
+        u.Name                      AS [Operator Name],
+        shs.Comment                 AS [Event Comments]
+    FROM SPECTATOR.SessionHistoryStates          AS shs
+    JOIN SPECTATOR.OperatorHistoryStates         AS ohs  ON shs.Id = ohs.Id
+    JOIN SPECTATOR.Users                         AS u    ON ohs.UserId = u.Id
+    JOIN SPECTATOR.Sessions                      AS s    ON shs.SessionId = s.Id
+    JOIN SPECTATOR.Groups                        AS g    ON s.GroupId = g.Id
+    JOIN SPECTATOR.Locations                     AS l    ON g.LocationId = l.Id
+    JOIN SPECTATOR.Customers                     AS c    ON g.CustomerId = c.Id
+    JOIN SPECTATOR.Session_Alarms                AS sa   ON sa.Id = s.Id
+    JOIN SPECTATOR.Alarms                        AS a    ON a.Id = sa.AcceptedAlarmId
+    JOIN SPECTATOR.Alarms_AcceptedAlarms         AS aaa  ON sa.AcceptedAlarmId = aaa.Id
+    JOIN SPECTATOR.AlarmCodes                    AS ac   ON aaa.InitialAlarmCodeId = ac.Id
+    JOIN SPECTATOR.TranslationLinks              AS tl   ON ac.NameTextId = tl.Id
+    JOIN SPECTATOR.TranslationLinkTranslations   AS tlt  ON tl.Id = tlt.TranslationLinkId
+    JOIN SPECTATOR.Translations                  AS t    ON tlt.TranslationId = t.Id
+    WHERE
+        a.DateTimeReceived >= DATEADD(HOUR, @HoursStart, @now)
+        AND a.DateTimeReceived  < DATEADD(HOUR, @HoursEnd,   @now)
+        AND t.LanguageCode = @LanguageCode
+        AND shs.Status = 4
+    ORDER BY a.DateTimeReceived DESC;
+END
+GO
+
+CREATE OR ALTER PROCEDURE SPECTATOR.SP_MOI_R03_WithOperatorComments
+    @StartDate  datetime2 = NULL,       -- inclusivo; NULL = sin límite inferior
+    @EndDate    datetime2 = NULL,       -- exclusivo; NULL = sin límite superior
+    @Customer   nvarchar(200) = NULL,   -- NULL = todos
+    @LanguageCode nvarchar(10) = N'en-US'
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    WITH F_Alarms AS (
+        SELECT a.Id, a.InputNumber, a.DateTimeReceived
+        FROM SPECTATOR.Alarms AS a
+        WHERE (@StartDate IS NULL OR a.DateTimeReceived >= @StartDate)
+          AND (@EndDate   IS NULL OR a.DateTimeReceived <  @EndDate)
+    )
+    SELECT DISTINCT
+        c.Name                                   AS [Customers],
+        l.Name                                   AS [Location],
+        CAST(g.Reference AS varchar(255))        AS [Cams_ID],
+        a.DateTimeReceived                       AS [Event Time],
+        ac.Code                                  AS [Event],
+        a.InputNumber                            AS [Zone],
+        t.Text                                   AS [Event Type],
+        u.Name                                   AS [Operator Name],
+        shs.Comment                              AS [Operator Comment]
+    FROM SPECTATOR.SessionHistoryStates          AS shs
+    JOIN SPECTATOR.OperatorHistoryStates         AS ohs ON shs.Id = ohs.Id
+    JOIN SPECTATOR.Users                         AS u   ON ohs.UserId = u.Id
+    JOIN SPECTATOR.Sessions                      AS s   ON shs.SessionId = s.Id
+    JOIN SPECTATOR.Groups                        AS g   ON s.GroupId = g.Id
+    JOIN SPECTATOR.Locations                     AS l   ON g.LocationId = l.Id
+    JOIN SPECTATOR.Customers                     AS c   ON g.CustomerId = c.Id
+    JOIN SPECTATOR.Session_Alarms                AS sa  ON sa.Id = s.Id
+    JOIN F_Alarms                                AS a   ON a.Id = sa.AcceptedAlarmId
+    JOIN SPECTATOR.Alarms_AcceptedAlarms         AS aaa ON sa.AcceptedAlarmId = aaa.Id
+    JOIN SPECTATOR.AlarmCodes                    AS ac  ON aaa.InitialAlarmCodeId = ac.Id
+    JOIN SPECTATOR.TranslationLinks              AS tl  ON ac.NameTextId = tl.Id
+    JOIN SPECTATOR.TranslationLinkTranslations   AS tlt ON tl.Id = tlt.TranslationLinkId
+    JOIN SPECTATOR.Translations                  AS t   ON tlt.TranslationId = t.Id
+    WHERE
+        t.LanguageCode = @LanguageCode
+        AND shs.Status IN (0,4)
+        AND (@Customer IS NULL OR c.Name = @Customer)
+    ORDER BY c.Name, l.Name, [Cams_ID], [Event Time] DESC;
+END
+GO
+
+
+CREATE OR ALTER PROCEDURE SPECTATOR.SP_MOI_R04_WithoutOperatorComments
+    @StartDate  datetime2 = NULL, 
+    @EndDate    datetime2 = NULL, 
+    @Customer   nvarchar(200) = NULL, 
+    @LanguageCode nvarchar(10) = N'en-US'
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    WITH F_Alarms AS (
+        SELECT a.Id, a.InputNumber, a.DateTimeReceived
+        FROM SPECTATOR.Alarms AS a
+        WHERE (@StartDate IS NULL OR a.DateTimeReceived >= @StartDate)
+          AND (@EndDate   IS NULL OR a.DateTimeReceived <  @EndDate)
+    )
+    SELECT DISTINCT
+        c.Name                            AS [Customers],
+        l.Name                            AS [Location],
+        CAST(g.Reference AS varchar(255)) AS [Cams_ID],
+        a.DateTimeReceived                AS [Event Time],
+        ac.Code                           AS [Event],
+        a.InputNumber                     AS [Zone],
+        t.Text                            AS [Event Type],
+        u.Name                            AS [Operator Name],
+        shs.Comment                       AS [Operator Comment]
+    FROM SPECTATOR.SessionHistoryStates          AS shs
+    JOIN SPECTATOR.OperatorHistoryStates         AS ohs  ON shs.Id = ohs.Id
+    JOIN SPECTATOR.Users                         AS u    ON ohs.UserId = u.Id
+    JOIN SPECTATOR.Sessions                      AS s    ON shs.SessionId = s.Id
+    JOIN SPECTATOR.Groups                        AS g    ON s.GroupId = g.Id
+    JOIN SPECTATOR.Locations                     AS l    ON g.LocationId = l.Id
+    JOIN SPECTATOR.Customers                     AS c    ON g.CustomerId = c.Id
+    JOIN SPECTATOR.Session_Alarms                AS sa   ON sa.Id = s.Id
+    JOIN F_Alarms                                AS a    ON a.Id = sa.AcceptedAlarmId
+    JOIN SPECTATOR.Alarms_AcceptedAlarms         AS aaa  ON sa.AcceptedAlarmId = aaa.Id
+    JOIN SPECTATOR.AlarmCodes                    AS ac   ON aaa.InitialAlarmCodeId = ac.Id
+    JOIN SPECTATOR.TranslationLinks              AS tl   ON ac.NameTextId = tl.Id
+    JOIN SPECTATOR.TranslationLinkTranslations   AS tlt  ON tl.Id = tlt.TranslationLinkId
+    JOIN SPECTATOR.Translations                  AS t    ON tlt.TranslationId = t.Id
+    WHERE
+        t.LanguageCode = @LanguageCode
+        AND shs.Status IN (0,4)
+        AND (@Customer IS NULL OR c.Name = @Customer)
+    ORDER BY c.Name, l.Name, [Cams_ID], [Event Time] DESC;
+END
+GO
+
+CREATE OR ALTER PROCEDURE SPECTATOR.SP_MOI_R05_Monthly_Fact_Test
+    @StartDate datetime2,                     -- inclusivo
+    @EndDate   datetime2,                     -- exclusivo
+    @LateForTestCodesCsv nvarchar(max) = N'642,631'  -- lista CSV de códigos numéricos
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    ;WITH LateCodes AS (
+        SELECT DISTINCT TRY_CAST(TRIM([value]) AS int) AS CodeInt
+        FROM STRING_SPLIT(@LateForTestCodesCsv, N',')
+        WHERE TRY_CAST(TRIM([value]) AS int) IS NOT NULL
+    ),
+    Base AS (
+        SELECT 
+            a.Id             AS AlarmId,
+            a.DateTimeReceived,
+            ac.Code          AS AlarmCode
+        FROM SPECTATOR.Alarms                        AS a
+        JOIN SPECTATOR.Session_Alarms                AS sa  ON sa.AcceptedAlarmId = a.Id
+        JOIN SPECTATOR.Alarms_AcceptedAlarms         AS aaa ON aaa.Id = sa.AcceptedAlarmId
+        JOIN SPECTATOR.AlarmCodes                    AS ac  ON ac.Id = aaa.InitialAlarmCodeId
+        WHERE a.DateTimeReceived >= @StartDate
+          AND a.DateTimeReceived <  @EndDate
+    )
+    SELECT
+        DATEPART(YEAR,  DateTimeReceived)                          AS [Year],
+        DATEPART(MONTH, DateTimeReceived)                          AS [MonthNumber],
+        DATENAME(MONTH, DateTimeReceived)                          AS [Month],
+        COUNT(*)                                                   AS [Total Events],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 130 AND 139 THEN 1 ELSE 0 END) AS [Burglary],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 120 AND 125 THEN 1 ELSE 0 END) AS [Panic],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 110 AND 118 THEN 1 ELSE 0 END) AS [Fire],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 300 AND 357 THEN 1 ELSE 0 END) AS [Trouble],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) = 602 THEN 1 ELSE 0 END)               AS [Periodic Test],
+        SUM(CASE WHEN EXISTS (SELECT 1 FROM LateCodes lc WHERE lc.CodeInt = TRY_CAST(AlarmCode AS int)) THEN 1 ELSE 0 END) AS [Late for Test],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) = 400 THEN 1 ELSE 0 END)               AS [Open/Close]
+    FROM Base
+    GROUP BY
+        DATEPART(YEAR,  DateTimeReceived),
+        DATEPART(MONTH, DateTimeReceived),
+        DATENAME(MONTH, DateTimeReceived)
+    ORDER BY
+        [Year], [MonthNumber];
+END
+GO
+
+CREATE OR ALTER PROCEDURE SPECTATOR.SP_MOI_R06_Monthly_Fact_NoLate
+    @StartDate datetime2,   -- inclusivo
+    @EndDate   datetime2    -- exclusivo
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    ;WITH Base AS (
+        SELECT 
+            a.Id               AS AlarmId,
+            a.DateTimeReceived AS DateTimeReceived,
+            ac.Code            AS AlarmCode
+        FROM SPECTATOR.Alarms                 AS a
+        JOIN SPECTATOR.Session_Alarms         AS sa   ON sa.AcceptedAlarmId = a.Id
+        JOIN SPECTATOR.Alarms_AcceptedAlarms  AS aaa  ON aaa.Id = sa.AcceptedAlarmId
+        JOIN SPECTATOR.AlarmCodes             AS ac   ON ac.Id = aaa.InitialAlarmCodeId
+        WHERE a.DateTimeReceived >= @StartDate
+          AND a.DateTimeReceived <  @EndDate
+    )
+    SELECT
+        DATEPART(YEAR,  DateTimeReceived)             AS [Year],
+        DATEPART(MONTH, DateTimeReceived)             AS [MonthNumber],
+        DATENAME(MONTH, DateTimeReceived)             AS [Month],
+        COUNT(*)                                      AS [Total Events],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 130 AND 139 THEN 1 ELSE 0 END) AS [Burglary],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 120 AND 125 THEN 1 ELSE 0 END) AS [Panic],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 110 AND 118 THEN 1 ELSE 0 END) AS [Fire],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) BETWEEN 300 AND 357 THEN 1 ELSE 0 END) AS [Trouble],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) = 602 THEN 1 ELSE 0 END)               AS [Periodic Test],
+        CAST(0 AS int)                               AS [Late for Test],
+        SUM(CASE WHEN TRY_CAST(AlarmCode AS int) = 400 THEN 1 ELSE 0 END)               AS [Open/Close]
+    FROM Base
+    GROUP BY
+        DATEPART(YEAR,  DateTimeReceived),
+        DATEPART(MONTH, DateTimeReceived),
+        DATENAME(MONTH, DateTimeReceived)
+    ORDER BY
+        [Year], [MonthNumber];
+END
+GO
+
+CREATE OR ALTER PROCEDURE SPECTATOR.SP_MOI_R07_HealthMeasurements_ByPatient
+    @StartDate  datetime2 = NULL,            -- inclusivo (NULL = sin límite inferior)
+    @EndDate    datetime2 = NULL,            -- exclusivo (NULL = sin límite superior)
+    @PatientsCsv nvarchar(max)               -- CSV con nombres (e.g. 'Benali maftahi, Fatima Msaadi, ...')
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    ;WITH PatientsCsv AS (
+        SELECT DISTINCT UPPER(LTRIM(RTRIM(value))) AS NormalizedName
+        FROM STRING_SPLIT(@PatientsCsv, N',')
+        WHERE value IS NOT NULL AND LTRIM(RTRIM(value)) <> N''
+    ),
+    PatientsNorm AS (
+        SELECT
+            per.Id AS PatientId,
+            per.FirstName,
+            per.MiddleName,
+            per.LastName,
+            per.EmailAddress,
+            per.MobileNumber,
+            UPPER(LTRIM(RTRIM(
+                REPLACE(REPLACE(REPLACE(
+                    CONCAT(
+                        COALESCE(per.FirstName, ''), ' ',
+                        COALESCE(per.MiddleName, ''), ' ',
+                        COALESCE(per.LastName, '')
+                    ),
+                    '  ', ' '), '  ', ' '), '  ', ' ')
+            ))) AS NormalizedFullName
+        FROM SPECTATOR.Persons         AS per
+        JOIN SPECTATOR.Person_Patients AS ppat ON ppat.Id = per.Id
+        WHERE EXISTS (
+            SELECT 1 FROM PatientsCsv x WHERE x.NormalizedName = 
+                UPPER(LTRIM(RTRIM(
+                    REPLACE(REPLACE(REPLACE(
+                        CONCAT(
+                            COALESCE(per.FirstName, ''), ' ',
+                            COALESCE(per.MiddleName, ''), ' ',
+                            COALESCE(per.LastName, '')
+                        ),
+                        '  ', ' '), '  ', ' '), '  ', ' ')
+                )))
+        )
+    )
+    SELECT
+        -- Paciente
+        pn.PatientId,
+        pn.FirstName        AS PatientFirstName,
+        pn.MiddleName       AS PatientMiddleName,
+        pn.LastName         AS PatientLastName,
+        pn.EmailAddress     AS PatientEmail,
+        pn.MobileNumber     AS PatientMobile,
+
+        -- Medición base
+        hm.Id               AS HealthMeasurementId,
+        hm.DateTimeReceived,
+        hm.TriggeredAlarm,
+        hm.[Type]           AS MeasurementType,
+
+        -- Umbrales (si existen) por paciente y tipo
+        ht.MinValue         AS ThresholdMinValue,
+        ht.MaxValue         AS ThresholdMaxValue,
+        ht.[Unit]           AS ThresholdUnit,
+
+        -- Detalles por tipo (LEFT para no perder filas)
+        act.Calories        AS Activity_Calories,
+        act.Steps           AS Activity_Steps,
+        act.Distance        AS Activity_Distance,
+
+        bg.BloodGlucose     AS Glucose_BloodGlucose,
+        bg.DinnerSituation  AS Glucose_DinnerSituation,
+        bg.DrugSituation    AS Glucose_DrugSituation,
+
+        bo.BloodOxygen      AS SpO2_BloodOxygen,
+        bo.HeartRate        AS SpO2_HeartRate,
+
+        bp.Diastolic        AS BP_Diastolic,
+        bp.Systolic         AS BP_Systolic,
+        bp.HeartRate        AS BP_HeartRate,
+
+        resp.Respiratory        AS Resp_Respiratory,
+        resp.HeartRate          AS Resp_HeartRate,
+        resp.StressIndex        AS Resp_StressIndex,
+        resp.ActivityIndex      AS Resp_ActivityIndex,
+        resp.SleepIndex         AS Resp_SleepIndex,
+        resp.EquilibriumIndex   AS Resp_EquilibriumIndex,
+        resp.MetabolismIndex    AS Resp_MetabolismIndex,
+        resp.HealthIndex        AS Resp_HealthIndex,
+        resp.RelaxationIndex    AS Resp_RelaxationIndex,
+
+        slp.TimesAwoken         AS Sleep_TimesAwoken,
+        slp.FallSleep           AS Sleep_FallSleep,
+        slp.SleepEfficiency     AS Sleep_SleepEfficiency,
+        slp.StartTime           AS Sleep_StartTime,
+        slp.EndTime             AS Sleep_EndTime,
+
+        tmp.Temperature         AS Temp_Temperature,
+
+        wgt.Weight              AS Weight_Weight,
+        wgt.BMI                 AS Weight_BMI,
+        wgt.BodyFat             AS Weight_BodyFat,
+        wgt.BoneMass            AS Weight_BoneMass,
+        wgt.BodyWater           AS Weight_BodyWater,
+        wgt.MuscleMass          AS Weight_MuscleMass,
+        wgt.VisceralFatLevel    AS Weight_VisceralFatLevel
+
+    FROM PatientsNorm                         AS pn
+    JOIN SPECTATOR.HealthMeasurements         AS hm   ON hm.PatientId = pn.PatientId
+    LEFT JOIN SPECTATOR.HealthThresholds      AS ht   ON ht.PatientId = pn.PatientId AND ht.[Type] = hm.[Type]
+    LEFT JOIN SPECTATOR.HM_ActivityMeasurement      AS act  ON act.Id  = hm.Id
+    LEFT JOIN SPECTATOR.HM_BloodGlucoseMeasurement  AS bg   ON bg.Id   = hm.Id
+    LEFT JOIN SPECTATOR.HM_BloodOxygenMeasurement   AS bo   ON bo.Id   = hm.Id
+    LEFT JOIN SPECTATOR.HM_BloodPressureMeasurement AS bp   ON bp.Id   = hm.Id
+    LEFT JOIN SPECTATOR.HM_RespiratoryMeasurement   AS resp ON resp.Id = hm.Id
+    LEFT JOIN SPECTATOR.HM_SleepMeasurement         AS slp  ON slp.Id  = hm.Id
+    LEFT JOIN SPECTATOR.HM_TemperatureMeasurement   AS tmp  ON tmp.Id  = hm.Id
+    LEFT JOIN SPECTATOR.HM_WeightMeasurement        AS wgt  ON wgt.Id  = hm.Id
+    WHERE
+        (@StartDate IS NULL OR hm.DateTimeReceived >= @StartDate)
+        AND (@EndDate   IS NULL OR hm.DateTimeReceived <  @EndDate)
+    ORDER BY
+        pn.LastName, pn.FirstName, hm.DateTimeReceived DESC;
+END
+GO
+
+CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportParameters_GetByReport
+    @ReportDefinitionId INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT Id,
+           ReportDefinitionId,
+           ParamName,
+           ParamType,
+           DefaultValue,
+           IsRequired,
+           DisplayOrder,
+           CreatedAtUtc,
+           UpdatedAtUtc
+    FROM SPECTATOR.RG_ReportParameters
+    WHERE ReportDefinitionId = @ReportDefinitionId
+    ORDER BY DisplayOrder, Id;
+END
+GO
+
+CREATE OR ALTER PROCEDURE [SPECTATOR].[RG_ReportParameters_Insert]
+(
+    @ReportDefinitionId INT,
+    @ParamName NVARCHAR(200),
+    @ParamType NVARCHAR(50),
+    @DefaultValue NVARCHAR(500) = NULL,
+    @DisplayOrder INT = 0,
+    @IsRequired BIT = 0
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO SPECTATOR.RG_ReportParameters
+    (
+        ReportDefinitionId,
+        ParamName,
+        ParamType,
+        DefaultValue,
+        DisplayOrder,
+        IsRequired,
+        CreatedAtUtc
+    )
+    VALUES
+    (
+        @ReportDefinitionId,
+        @ParamName,
+        @ParamType,
+        @DefaultValue,
+        @DisplayOrder,
+        @IsRequired,
+        SYSUTCDATETIME()
+    );
+END
+
+
+CREATE OR ALTER PROCEDURE SPECTATOR.RG_ReportParameters_DeleteByReport
+(
+    @ReportDefinitionId INT
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DELETE FROM SPECTATOR.RG_ReportParameters
+    WHERE ReportDefinitionId = @ReportDefinitionId;
+END
+GO
+

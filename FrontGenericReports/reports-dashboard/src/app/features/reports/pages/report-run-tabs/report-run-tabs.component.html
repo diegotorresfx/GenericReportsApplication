@@ -4,7 +4,7 @@
     <h2 class="m-0">{{ rep.name }}</h2>
   </div>
 
-  <!-- Parámetros dinámicos -->
+  <!-- Parámetros -->
   <mat-card class="p-3 mb-3" [formGroup]="paramsForm">
     <div class="row g-3 align-items-end">
       <div class="col-md-3">
@@ -14,10 +14,21 @@
         </mat-form-field>
       </div>
 
-      <div class="col-md-9 d-flex justify-content-end">
-        <button mat-stroked-button color="primary" (click)="addParam()">
+      <div class="col-md-9 d-flex justify-content-end align-items-center">
+        <!-- Solo se permite agregar parámetros si NO hay definición en Admin -->
+        <button
+          mat-stroked-button
+          color="primary"
+          (click)="addParam()"
+          *ngIf="!report?.parametersDefinition?.length">
           <mat-icon>add</mat-icon>&nbsp;{{ 'COMMON.ADD_PARAM' | translate }}
         </button>
+
+        <span
+          class="text-muted ms-auto"
+          *ngIf="report?.parametersDefinition?.length">
+          Parameters are defined in Admin. You can only set their values here.
+        </span>
       </div>
     </div>
 
@@ -27,7 +38,11 @@
         <div class="col-md-4">
           <mat-form-field appearance="outline" class="w-100">
             <mat-label>{{ 'COMMON.NAME' | translate }}</mat-label>
-            <input matInput formControlName="name" placeholder="p.ej. StartDate">
+            <input
+              matInput
+              formControlName="name"
+              placeholder="p.ej. StartDate"
+              [readonly]="!!report?.parametersDefinition?.length">
           </mat-form-field>
         </div>
 
@@ -35,7 +50,7 @@
         <div class="col-md-3">
           <mat-form-field appearance="outline" class="w-100">
             <mat-label>{{ 'COMMON.TYPE' | translate }}</mat-label>
-            <mat-select formControlName="type">
+            <mat-select formControlName="type" [disabled]="!!report?.parametersDefinition?.length">
               <mat-option value="string">string</mat-option>
               <mat-option value="int">int</mat-option>
               <mat-option value="decimal">decimal</mat-option>
@@ -44,7 +59,7 @@
           </mat-form-field>
         </div>
 
-        <!-- Valor normal -->
+        <!-- Valor -->
         <div class="col-md-4" *ngIf="p.get('type')?.value !== 'date'; else dateField">
           <mat-form-field appearance="outline" class="w-100">
             <mat-label>{{ 'COMMON.VALUE' | translate }}</mat-label>
@@ -68,8 +83,8 @@
           </div>
         </ng-template>
 
-        <!-- Quitar -->
-        <div class="col-md-1 d-flex align-items-center">
+        <!-- Quitar (solo si no hay definición en Admin) -->
+        <div class="col-md-1 d-flex align-items-center" *ngIf="!report?.parametersDefinition?.length">
           <button mat-icon-button color="warn" (click)="removeParam(i)" aria-label="Eliminar">
             <mat-icon>delete</mat-icon>
           </button>

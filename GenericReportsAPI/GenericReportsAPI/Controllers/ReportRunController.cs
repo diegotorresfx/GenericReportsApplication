@@ -14,10 +14,12 @@ namespace GenericReportsAPI.Controllers
     public sealed class ReportRunController : ControllerBase
     {
         private readonly IReportRunner _runner;
+        private readonly IReportsRepository _repo;
 
-        public ReportRunController(IReportRunner runner)
+        public ReportRunController(IReportRunner runner, IReportsRepository repo)
         {
             _runner = runner;
+            _repo = repo;
         }
 
         [HttpPost("metadata", Name = "GetReportMetadata")]
@@ -44,24 +46,35 @@ namespace GenericReportsAPI.Controllers
         [ProducesResponseType(StatusCodes.Status502BadGateway)]
         public ActionResult<ExecuteReportResponse> ExecuteAnyReport([FromBody] ExecuteAnyReportRequest request)
         {
-            if (!ModelState.IsValid) return ValidationProblem(ModelState);
+            if (!ModelState.IsValid)
+                return ValidationProblem(ModelState);
+
+            // obtener definición para aplicar default values
+            var all = _repo.GetAllAsync();
+            var def = all.FirstOrDefault(r => r.StoredProcedure.Equals(request.StoredProcedure, StringComparison.OrdinalIgnoreCase));
+
+            if (def != null && def.ParametersDefinition != null)
+            {
+                foreach (var p in def.ParametersDefinition)
+                {
+                    if (!request.Parameters.ContainsKey(p.ParamName) ||
+                        request.Parameters[p.ParamName] == null ||
+                        string.IsNullOrWhiteSpace(request.Parameters[p.ParamName]?.ToString()))
+                    {
+                        if (!string.IsNullOrWhiteSpace(p.DefaultValue))
+                            request.Parameters[p.ParamName] = p.DefaultValue;
+                    }
+                }
+            }
 
             try
             {
                 var result = _runner.Execute(request);
                 return Ok(result);
             }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(ex.Message);
-            }
             catch (SqlException ex)
             {
-                return StatusCode(502, $"Error SQL al ejecutar el procedimiento: {ex.Number}");
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(ex.Message);
+                return StatusCode(502, $"SQL Error: {ex.Message}");
             }
         }
     }

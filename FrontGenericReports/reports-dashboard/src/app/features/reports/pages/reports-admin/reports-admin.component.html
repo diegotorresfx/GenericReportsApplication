@@ -32,7 +32,76 @@
           </label>
         </div>
 
-        <div class="d-flex gap-2">
+        <!-- ===== Sección de parámetros ===== -->
+        <div class="mt-3">
+          <h5 class="mb-2 d-flex align-items-center gap-2">
+            <mat-icon>tune</mat-icon>
+            <span>Report parameters</span>
+          </h5>
+
+          <div formArrayName="parametersDefinition">
+            <div
+              class="row g-2 mb-2"
+              *ngFor="let p of paramsFA.controls; let i = index"
+              [formGroupName]="i">
+
+              <!-- Nombre de parámetro -->
+              <div class="col-5">
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Param name</mat-label>
+                  <input matInput formControlName="name" placeholder="DaysBack, StartDate, ...">
+                </mat-form-field>
+              </div>
+
+              <!-- Tipo -->
+              <div class="col-4">
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Type</mat-label>
+                  <mat-select formControlName="type">
+                    <mat-option value="string">string</mat-option>
+                    <mat-option value="int">int</mat-option>
+                    <mat-option value="decimal">decimal</mat-option>
+                    <mat-option value="date">date (yyyy-MM-dd)</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+              <!-- Default value -->
+              <div class="col-2">
+                <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>Default</mat-label>
+                  <input matInput formControlName="defaultValue">
+                </mat-form-field>
+              </div>
+
+              <!-- Eliminar -->
+              <div class="col-1 d-flex align-items-center justify-content-center">
+                <button
+                  mat-icon-button
+                  color="warn"
+                  type="button"
+                  (click)="removeParamDef(i)"
+                  aria-label="Remove parameter">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end mb-2">
+            <button mat-stroked-button type="button" color="primary" (click)="addParamDef()">
+              <mat-icon>add</mat-icon>&nbsp;Add parameter
+            </button>
+          </div>
+
+          <small class="text-muted">
+            Define here the parameters required by the stored procedure
+            (name must match the SP parameter name, type is used by the runner,
+            and default value is optional).
+          </small>
+        </div>
+
+        <div class="d-flex gap-2 mt-3">
           <button mat-raised-button color="primary" type="submit">
             <mat-icon>save</mat-icon>&nbsp;{{ 'COMMON.SAVE' | translate }}
           </button>

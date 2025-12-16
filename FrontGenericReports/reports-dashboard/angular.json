@@ -62,7 +62,15 @@
                   "maximumError": "4mb"
                 }
               ],
-              "outputHashing": "all"
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "baseHref": "/reports/",
+              "deployUrl": "/reports/"
             },
             "development": {
               "optimization": false,

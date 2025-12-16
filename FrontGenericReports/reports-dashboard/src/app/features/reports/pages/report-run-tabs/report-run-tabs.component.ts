@@ -40,7 +40,7 @@ type ParamType = 'string' | 'int' | 'decimal' | 'date';
 export class ReportRunTabsComponent implements OnInit {
   report: ReportDefinition | null = null;
 
-  // Form para parámetros dinámicos
+  // Form para parámetros dinámicos (o definidos por Admin)
   paramsForm!: FormGroup;
 
   @ViewChild(ReportRunTableComponent) table!: ReportRunTableComponent;
@@ -56,7 +56,7 @@ export class ReportRunTabsComponent implements OnInit {
   ) {
     this.paramsForm = this.fb.group({
       timeoutSeconds: [600, [Validators.required, Validators.min(1)]],
-      params: this.fb.array([]) // FormArray de parámetros dinámicos
+      params: this.fb.array([]) // FormArray de parámetros
     });
   }
 
@@ -66,8 +66,12 @@ export class ReportRunTabsComponent implements OnInit {
       this.snack.open('No se recibió el id del reporte', 'Cerrar', { duration: 3000 });
       return;
     }
+
     this.svc.getById(id).subscribe({
-      next: rep => this.report = rep,
+      next: rep => {
+        this.report = rep;
+        this.buildParamsFromDefinition(rep);
+      },
       error: _ => this.snack.open('No fue posible cargar el reporte', 'Cerrar', { duration: 2500 })
     });
   }
@@ -78,21 +82,59 @@ export class ReportRunTabsComponent implements OnInit {
     return this.paramsForm.get('params') as FormArray;
   }
 
-  newParamRow(): FormGroup {
+  private newParamRow(initial?: { name?: string; type?: ParamType; value?: any; lockNameType?: boolean }): FormGroup {
+    const lock = !!initial?.lockNameType;
+
     return this.fb.group({
-      name: ['', Validators.required],
-      type: ['string' as ParamType, Validators.required],
-      // El control value lo manejamos según tipo (string/number/date)
-      value: ['']
+      name: [{ value: initial?.name ?? '', disabled: lock }, Validators.required],
+      type: [{ value: initial?.type ?? ('string' as ParamType), disabled: lock }, Validators.required],
+      value: [initial?.value ?? '']
     });
   }
 
   addParam() {
+    // Solo se permite agregar parámetros manuales si NO vienen desde Admin
+    if (this.report?.parametersDefinition && this.report.parametersDefinition.length) {
+      this.snack.open('Parameters are defined in Admin for this report.', 'Cerrar', { duration: 2500 });
+      return;
+    }
     this.paramsFA.push(this.newParamRow());
   }
 
   removeParam(i: number) {
     this.paramsFA.removeAt(i);
+  }
+
+  /**
+   * Construye el formulario a partir de la definición de parámetros
+   * que viene desde Admin (si existe).
+   */
+  private buildParamsFromDefinition(rep: ReportDefinition) {
+    // Reset timeout (si en el futuro lo quieres parametrizar, aquí es el punto)
+    this.paramsForm.patchValue({ timeoutSeconds: 600 }, { emitEvent: false });
+
+    const fa = this.paramsFA;
+    fa.clear();
+
+    const defs = rep.parametersDefinition ?? [];
+
+    if (defs.length === 0) {
+      // No hay definición: se mantiene el modo "manual" (ADD_PARAM)
+      return;
+    }
+
+    // Hay definición: se crean filas con name + type bloqueados,
+    // y value editable con el defaultValue (si existe).
+    for (const def of defs) {
+      fa.push(
+        this.newParamRow({
+          name: def.name,
+          type: def.type as ParamType,
+          value: def.defaultValue ?? '',
+          lockNameType: true
+        })
+      );
+    }
   }
 
   // --- Construye el objeto de parámetros con el tipo correcto ---

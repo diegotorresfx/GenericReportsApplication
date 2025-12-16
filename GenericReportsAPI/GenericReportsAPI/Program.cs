@@ -55,7 +55,7 @@ try
         c.AddSecurityRequirement(new OpenApiSecurityRequirement { { securityScheme, Array.Empty<string>() } });
     });
 
-    // ===== Options fuertemente tipadas + validación =====
+    // ===== Options fuertemente tipadas + validaciï¿½n =====
     builder.Services.AddOptions<ConnectionStrings>()
         .Bind(builder.Configuration.GetSection("ConnectionStrings"))
         .ValidateDataAnnotations()
@@ -155,7 +155,7 @@ try
 }
 catch (Exception ex)
 {
-    Log.Fatal(ex, "La aplicación falló al iniciar.");
+    Log.Fatal(ex, "La aplicaciï¿½n fallï¿½ al iniciar.");
 }
 finally
 {
