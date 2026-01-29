@@ -1,0 +1,86 @@
+<div class="moi-wrap" *ngIf="rows?.length; else empty">
+  <div class="moi-header">
+    <div class="moi-title">
+      <div class="badge">{{ orientationBadge }}</div>
+      <h2 class="m-0">{{ title }}</h2>
+    </div>
+
+    <div class="moi-sub">
+      <div class="line">
+        <span class="label">Generated:</span>
+        <span class="value">{{ now | date:'yyyy-MM-dd HH:mm:ss' }}</span>
+      </div>
+      <div class="hint">
+        This view matches the MOI template layout rules for the selected report template.
+      </div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 3 / 4 (Grouped by Customer -> Site/CAMS) -->
+  <ng-container *ngIf="template === 3 || template === 4; else flatTable">
+    <div class="customer-block" *ngFor="let c of grouped; trackBy: trackByIndex">
+      <div class="customer-name">{{ c.customer }}</div>
+
+      <div class="site-block" *ngFor="let s of c.sites; trackBy: trackByIndex">
+        <div class="site-title">
+          <div class="site-left">
+            <div class="site-location">{{ s.location }}</div>
+            <div class="site-cams">(CAMS ID: {{ s.camsId }})</div>
+          </div>
+        </div>
+
+        <!-- Table: mimic the per-site table shown in the template doc for 3/4 -->
+        <div class="table-wrap">
+          <table class="moi-table">
+            <thead>
+              <tr>
+                <th>Event Time</th>
+                <th>Event Code</th>
+                <th>Zone No</th>
+                <th>Event Type</th>
+                <th *ngIf="template === 3">Operator Name</th>
+                <th *ngIf="template === 3">Operator Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let r of s.rows; trackBy: trackByIndex">
+                <td>{{ (r['Event Time'] ?? r['Alarm Time'] ?? r['DateTimeReceived']) }}</td>
+                <td>{{ (r['Event'] ?? r['Code'] ?? r['Event code'] ?? r['Event Code']) }}</td>
+                <td>{{ (r['Zone'] ?? r['Zones'] ?? r['Zone no:'] ?? r['Zone No:'] ?? r['InputNumber']) }}</td>
+                <td>{{ (r['Event Type'] ?? r['Text']) }}</td>
+                <td *ngIf="template === 3">{{ (r['Operator Name'] ?? r['Name']) }}</td>
+                <td *ngIf="template === 3">{{ (r['Operator Comment'] ?? r['Operator Comments'] ?? r['Event Comments'] ?? r['Comments']) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- FLAT TABLE TEMPLATES 1 / 2 / 5 / 6 (or fallback) -->
+  <ng-template #flatTable>
+    <div class="table-wrap">
+      <table class="moi-table">
+        <thead>
+          <tr>
+            <th *ngFor="let c of flatColumns; trackBy: trackByIndex">{{ c }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let r of rows; trackBy: trackByIndex">
+            <td *ngFor="let c of flatColumns; trackBy: trackByIndex">
+              {{ formatCell(r?.[c]) }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </ng-template>
+</div>
+
+<ng-template #empty>
+  <div class="moi-empty">
+    Run the report first to load data, then select a template view.
+  </div>
+</ng-template>

@@ -1,0 +1,151 @@
+.moi-wrap {
+  border-radius: 16px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+}
+
+.moi-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  margin-bottom: 12px;
+}
+
+.moi-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.moi-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .line {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+
+    .label {
+      font-weight: 700;
+      color: rgba(0,0,0,0.65);
+    }
+    .value {
+      color: rgba(0,0,0,0.85);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+  }
+
+  .hint {
+    color: rgba(0,0,0,0.55);
+    font-size: 12px;
+  }
+}
+
+.customer-block {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(0,0,0,0.12);
+}
+
+.customer-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.site-block {
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fafafa;
+}
+
+.site-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+
+  .site-location {
+    font-weight: 800;
+    font-size: 14px;
+    color: rgba(0,0,0,0.85);
+  }
+
+  .site-cams {
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(0,0,0,0.60);
+  }
+}
+
+.table-wrap {
+  width: 100%;
+  overflow: auto;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.moi-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  thead th {
+    position: sticky;
+    top: 0;
+    background: #f5f7fb;
+    color: rgba(0,0,0,0.78);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    white-space: nowrap;
+  }
+
+  tbody td {
+    font-size: 12px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  tbody tr:hover td {
+    background: #f9fbff;
+  }
+}
+
+.moi-empty {
+  padding: 18px;
+  color: rgba(0,0,0,0.55);
+  font-style: italic;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px dashed rgba(0,0,0,0.20);
+}

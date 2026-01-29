@@ -151,5 +151,43 @@
         </div>
       </ng-template>
     </mat-tab>
+    <!-- TAB 3: NEW - MOI Template View -->
+    <mat-tab label="MOI Template View">
+      <div class="mt-3" *ngIf="table?.ds?.filteredData?.length; else noDataMoi">
+        <mat-card class="p-3 mb-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <mat-icon>description</mat-icon>
+            <h3 class="m-0">MOI Report Template Layout</h3>
+          </div>
+
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Template</mat-label>
+            <mat-select [(value)]="selectedMoiTemplate">
+              <mat-option [value]="1">Template 1 – 24 Hours Report</mat-option>
+              <mat-option [value]="2">Template 2 – 8 Hours Report</mat-option>
+              <mat-option [value]="3">Template 3 – With Operator Comments</mat-option>
+              <mat-option [value]="4">Template 4 – Without Operator Comments</mat-option>
+              <mat-option [value]="5">Template 5 – Monthly Event Summary</mat-option>
+              <mat-option [value]="6">Template 6 – Event Summary - Shift</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div class="text-muted" style="font-size: 12px;">
+            Templates define orientation and layout rules (landscape for 1/2/5/6 and portrait grouping for 3/4).
+          </div>
+        </mat-card>
+
+        <app-moi-template-report-view
+          [template]="selectedMoiTemplate"
+          [rows]="table.ds?.filteredData ?? []">
+        </app-moi-template-report-view>
+      </div>
+
+      <ng-template #noDataMoi>
+        <div class="text-muted p-3">
+          Run the report first to load the dataset, then open this tab.
+        </div>
+      </ng-template>
+    </mat-tab>
   </mat-tab-group>
 </mat-card>

@@ -21,9 +21,10 @@ import { ReportDefinition } from '@app/shared/models/report.model';
 import { ReportRunTableComponent } from '../report-run-table/report-run-table.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { CountByColumnChartComponent } from '../../charts/count-by-column-chart/count-by-column-chart.component';
+import { MoiTemplateReportViewComponent } from '../../charts/moi-template-report-view/moi-template-report-view.component';
 
 type ParamType = 'string' | 'int' | 'decimal' | 'date';
-
+type MoiTemplate = 1 | 2 | 3 | 4 | 5 | 6;
 @Component({
   selector: 'app-report-run-tabs',
   standalone: true,
@@ -32,7 +33,8 @@ type ParamType = 'string' | 'int' | 'decimal' | 'date';
     MatCardModule, MatTabsModule, MatIconModule,
     MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule,
     MatButtonModule, MatSnackBarModule, MatSelectModule,
-    ReportRunTableComponent, TranslateModule, CountByColumnChartComponent
+    ReportRunTableComponent, TranslateModule, CountByColumnChartComponent,
+    MoiTemplateReportViewComponent
   ],
   templateUrl: './report-run-tabs.component.html',
   styleUrls: ['./report-run-tabs.component.scss']
@@ -40,14 +42,12 @@ type ParamType = 'string' | 'int' | 'decimal' | 'date';
 export class ReportRunTabsComponent implements OnInit {
   report: ReportDefinition | null = null;
 
-  // Form para parámetros dinámicos (o definidos por Admin)
   paramsForm!: FormGroup;
 
   @ViewChild(ReportRunTableComponent) table!: ReportRunTableComponent;
 
-  // Columna seleccionada para el gráfico
   selectedColumn: string | null = null;
-
+  selectedMoiTemplate: MoiTemplate = 1;
   constructor(
     private fb: FormBuilder,
     private route: ActivatedRoute,
@@ -56,7 +56,7 @@ export class ReportRunTabsComponent implements OnInit {
   ) {
     this.paramsForm = this.fb.group({
       timeoutSeconds: [600, [Validators.required, Validators.min(1)]],
-      params: this.fb.array([]) // FormArray de parámetros
+      params: this.fb.array([])
     });
   }
 
@@ -76,8 +76,6 @@ export class ReportRunTabsComponent implements OnInit {
     });
   }
 
-  // --- Helpers del FormArray ---
-
   get paramsFA(): FormArray {
     return this.paramsForm.get('params') as FormArray;
   }
@@ -93,7 +91,6 @@ export class ReportRunTabsComponent implements OnInit {
   }
 
   addParam() {
-    // Solo se permite agregar parámetros manuales si NO vienen desde Admin
     if (this.report?.parametersDefinition && this.report.parametersDefinition.length) {
       this.snack.open('Parameters are defined in Admin for this report.', 'Cerrar', { duration: 2500 });
       return;
@@ -105,12 +102,7 @@ export class ReportRunTabsComponent implements OnInit {
     this.paramsFA.removeAt(i);
   }
 
-  /**
-   * Construye el formulario a partir de la definición de parámetros
-   * que viene desde Admin (si existe).
-   */
   private buildParamsFromDefinition(rep: ReportDefinition) {
-    // Reset timeout (si en el futuro lo quieres parametrizar, aquí es el punto)
     this.paramsForm.patchValue({ timeoutSeconds: 600 }, { emitEvent: false });
 
     const fa = this.paramsFA;
@@ -119,12 +111,9 @@ export class ReportRunTabsComponent implements OnInit {
     const defs = rep.parametersDefinition ?? [];
 
     if (defs.length === 0) {
-      // No hay definición: se mantiene el modo "manual" (ADD_PARAM)
       return;
     }
 
-    // Hay definición: se crean filas con name + type bloqueados,
-    // y value editable con el defaultValue (si existe).
     for (const def of defs) {
       fa.push(
         this.newParamRow({
@@ -137,7 +126,6 @@ export class ReportRunTabsComponent implements OnInit {
     }
   }
 
-  // --- Construye el objeto de parámetros con el tipo correcto ---
   buildParamsObject(): Record<string, any> {
     const obj: Record<string, any> = {};
     for (const group of this.paramsFA.controls as FormGroup[]) {
@@ -145,10 +133,9 @@ export class ReportRunTabsComponent implements OnInit {
       const type = group.get('type')!.value as ParamType;
       const raw  = group.get('value')!.value;
 
-      if (!name) continue; // ignora sin nombre
+      if (!name) continue;
 
       if (raw === null || raw === undefined || raw === '') {
-        // si no hay valor, no lo incluimos
         continue;
       }
 
@@ -159,14 +146,12 @@ export class ReportRunTabsComponent implements OnInit {
           break;
         }
         case 'decimal': {
-          // Permite coma o punto como separador
           const s = String(raw).replace(',', '.');
           const f = parseFloat(s);
           if (!Number.isNaN(f)) obj[name] = f;
           break;
         }
         case 'date': {
-          // normalizamos a yyyy-MM-dd
           const d = new Date(raw);
           if (!isNaN(d.getTime())) {
             const iso = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
@@ -174,7 +159,7 @@ export class ReportRunTabsComponent implements OnInit {
           }
           break;
         }
-        default: // 'string'
+        default:
           obj[name] = String(raw);
           break;
       }
@@ -193,8 +178,7 @@ export class ReportRunTabsComponent implements OnInit {
       return;
     }
 
-    const paramsObj = this.buildParamsObject(); // { ... } o {}
-    // Actualiza el JSON del hijo (solo lectura) y su timeout
+    const paramsObj = this.buildParamsObject();
     this.table.paramsJson = JSON.stringify(paramsObj, null, 2);
     this.table.timeoutSeconds = Number(this.paramsForm.get('timeoutSeconds')?.value ?? 600) || 600;
 
